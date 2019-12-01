@@ -10,6 +10,7 @@ if (isset($_POST['ids']) && is_array($_POST['ids'])) {
         $count[$photo->fields['ID']] = intval($prop['LIKES']['VALUE']);
     }
     unset($rsPhotos);
+
     echo json_encode(compact('count')); die();
 }
 
