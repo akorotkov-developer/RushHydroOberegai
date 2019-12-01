@@ -1,0 +1,4 @@
+<?
+$MESS["LEARNING_TEMPLATE_DESCRIPTION_NAME"] = "Проект Оберегай";
+$MESS["LEARNING_TEMPLATE_DESCRIPTION_DESC"] = "Проект Оберегай";
+?>

@@ -1,0 +1,36 @@
+body{font-size:80%; font-family:Arial,sans-serif; margin:0px; padding:0px; color:#000; line-height:1;}
+
+body, html{height:100%;}
+
+form, div, table, tr, td, ul, ol, li{margin:0px; padding:0px;}
+
+input, textarea, select {margin:0px; outline:none; font-family: Arial; font-size:1em;}
+
+table{ border-collapse: collapse;}
+td{vertical-align:middle;}
+
+ul{margin:0; padding:0px; list-style-type:none;}
+ul li{margin-bottom: 15px;}
+
+ol {margin-left: 25px;}
+
+p{margin:0 0 14px; line-height:1.4em;}
+
+a{color:#1489cd; outline:none;} 
+
+a:hover{text-decoration:none;}
+
+h1{margin:0 0 15px 0; font-size:1.8em; line-height: 1.2em; font-weight: normal; font-family: Tahoma;}
+
+h2{margin:0 0 17px 0; font-size: 1.5em;  font-weight: normal; line-height: 1.2em; font-family: Tahoma;}
+
+h3{font-size: 1.2em; line-height: 1.2em; margin:20px 0 15px;}
+
+img{border:0px;}
+
+.clearfix{clear:both; overflow:hidden;	height:0px;	line-height:0px; float:none !important; font-size:0px; padding:0px !important; margin:0px !important; background:none !important;}
+
+.tbl-cont {margin:15px 0;}
+.tbl-cont td, #content td {border:1px solid #dcdcdc; padding:8px; background:url("i/bg-opacity.png") repeat;}
+.tbl-cont .tbl-h td, #content th {background:#f68f2a url("i/bg-menu.png") repeat-x; color:#fff; border:1px solid #CE912D; padding:13px 8px;}
+.tbl-cont p, #content table p {margin:0;}

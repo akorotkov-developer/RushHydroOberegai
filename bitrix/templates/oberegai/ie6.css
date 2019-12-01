@@ -1,0 +1,4 @@
+#wrapper, #footer-wrap {width:expression((documentElement.clientWidth||document.body.clientWidth)<980?'980px':(documentElement.clientWidth||document.body.clientWidth)>1090?'1090px':'100%')}
+#wrapper{height:100%;}
+.news-main .nav {zoom:1;}
+#bg-main {position:absolute;}
