@@ -47,7 +47,7 @@ function normalize_picture_url($pic){
 
 function isBlackout(){
     //return false;
-    return time() <= MakeTimeStamp('01 00 00 22 12 2019','SS MI HH DD MM YYYY');
+    return time() <= MakeTimeStamp('01 00 00 15 12 2019','SS MI HH DD MM YYYY');
 }
 
 
