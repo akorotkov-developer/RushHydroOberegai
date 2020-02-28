@@ -1,0 +1,25 @@
+{reduce:space}
+{mask:main}
+
+    {set:item}
+    <div id="banners" class="newdesign">
+        <div id="b_nav">
+            {mask:item}
+            <a href="" {set:_first}class="act"{/}>{_rank}</a>
+            {/mask}
+        </div>
+        {mask:item}
+        <div class="slide {set:_first}act{/}" style="background-image: url(/{//site_dir}/images/1/{img});">
+            <div class="text">
+                <div class="title">
+                    <a href="{link}">
+                        <mark>{title}</mark>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {/mask}
+    </div>
+    {/}
+
+{/mask}

@@ -1,0 +1,26 @@
+#gallery {
+    padding-right: 20px;
+    height: 125px;
+    overflow: hidden; 
+	margin-bottom: 15px
+}
+
+#gallery .jcarousel-clip { overflow: hidden; width: 100%; }
+#gallery ul { text-align: left; padding: 0;  margin: 0;	list-style-type: none;  }
+#gallery ul li { float: left; margin-right: 11px; text-align: center; overflow: hidden; width: 133px; height: 98px; border: 1px solid #989898; }
+
+
+
+#gallery .jcarousel-next,
+#gallery .jcarousel-prev {
+	position: absolute;
+	right: -20px;
+	top: 0px;
+	width: 18px;
+	height: 49px;
+	cursor: pointer;
+	background: url(../img/gal_btn.gif) no-repeat;
+}
+
+#gallery .jcarousel-prev { top: 50px; background-position: 0 -50px; }
+#gallery .jcarousel-next-disabled, #gallery .jcarousel-prev-disabled { opacity: 0.3; cursor: default !important; }

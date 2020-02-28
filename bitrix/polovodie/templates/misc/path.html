@@ -1,0 +1,19 @@
+{reduce:space}
+{mask:main}
+
+    <ul class="crumbs">
+        <li><a href="/{site_dir}/">Главная</a></li>
+		{mask:item}
+            <li>
+			{mis:_last}<a href="{url}">{name}</a>{/}
+			{set:_last}
+			{choose}
+			{when: {//oper}=="view"}<a href="{url}">{name}</a>{/when}
+			{else}{name}{/}
+			{/choose}
+			{/set}
+            </li>
+		{/mask}
+    </ul>
+
+{/mask}

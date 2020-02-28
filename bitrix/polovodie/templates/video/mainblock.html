@@ -1,0 +1,30 @@
+{reduce:space}
+{mask:main}
+
+    {set:item}
+    <div>
+        <div class="header-content">
+            <h2>в объективе</h2>
+            <a href="{page_url}">{page_name}</a>
+        </div>
+        {mask:item}
+        <div class="media-block">
+            <div>
+                {set:link}
+                <iframe width="325" height="200" src="{link}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                {/}
+                {mis:link}
+                {set:file}
+                <video controls="" width="325">
+                    <source src="/{//site_dir}/files/{file}" type="video/{file_ext}">
+                </video>
+                {/}
+                {/}
+            </div>
+            <p>{title}</p>
+        </div>
+        {/}
+    </div>
+    {/}
+
+{/mask}

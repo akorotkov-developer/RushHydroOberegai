@@ -1,0 +1,21 @@
+{reduce:space}
+{mask:main}
+
+    {set:item}
+    <div>
+        <div class="header-content">
+            <h2>{page_name}</h2>
+            <a href="{page_url}">Все публикации</a>
+        </div>
+        <div class="news-block">
+            {mask:item}      
+            <div class="wrap">
+                <p class="date">{date_1}</p>
+                <p><a href="{url}">{title}</a></p>
+            </div>
+            {/mask}
+        </div>
+    </div>
+    {/}
+
+{/mask}

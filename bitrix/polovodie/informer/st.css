@@ -1,0 +1,163 @@
+body {padding:0; margin:0; line-height:1; font-size:12px; font-family:Tahoma,Arial,Helvetica,sans-serif; background-color: #fff;}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+h1{margin:15px 0 15px 0; font-size:2.1em; font-weight:normal; font-family:Calibri, sans-serif;}
+
+h2{margin:0 0 20px 0; font-weight:normal; font-size:1.8em; font-weight:normal; font-family:Calibri, sans-serif;}
+
+h3 {font-size: 13px; margin: 0 7px 5px 0;}
+
+#wrap {
+	position:relative; 
+	margin:0 auto;
+}
+
+.graphic { position: relative; z-index: 2; }
+.graphic-group {}
+.graphic-group:after { display: block; content: ""; clear: both; }
+.graphic-river { position: relative; margin-bottom: 30px; float: left; }
+.graphic-river-img { position: relative; z-index: 3; }
+
+.graphic-river_1 .graphic-river-img { width: 980px; height: 400px; background: url('i/river_1.png?v3') no-repeat 0 0; }
+.graphic-river_2 .graphic-river-img { width: 550px; height: 305px; background: url('i/river_2.png?v1') no-repeat 0 0; }
+.graphic-river_3 .graphic-river-img { width: 450px; height: 340px; background: url('i/river_3.png?v1') no-repeat 0 0; }
+.graphic-river_4 .graphic-river-img { width: 430px; height: 305px; background: url('i/river_4.png?v1') no-repeat 0 0; }
+.graphic-river_5 .graphic-river-img { width: 550px; height: 340px; background: url('i/river_5.png?v1') no-repeat 0 0; }
+.graphic-river_6 .graphic-river-img { width: 310px; height: 284px; background: url('i/river_6.png?v1') no-repeat 0 0; }
+.graphic-river_7 .graphic-river-img { width: 300px; height: 284px; background: url('i/river_7.png?v1') no-repeat 0 0; }
+.graphic-river_8 .graphic-river-img { width: 320px; height: 284px; background: url('i/river_8.png?v1') no-repeat 0 0; }
+.graphic-river_9 .graphic-river-img { width: 320px; height: 284px; background: url('i/river_9.png?v1') no-repeat 0 0; }
+
+
+.date-select {
+	margin-bottom: 30px;
+	padding-bottom: 7px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+
+.date-select select {
+	font-weight: normal;
+	margin: 0 0 0 6px;
+	width: 120px;
+	height: 21px;
+	padding: 0;
+}
+
+.water-lvl {
+	position: absolute;
+	z-index: 2;
+	background: url('i/water.png?2') no-repeat;
+}
+.pic {
+	position: absolute;
+	z-index: 1;
+	background: url('i/pic.png') no-repeat;
+	width: 20px;
+	height: 70px;
+}
+.popup {
+	position: absolute;
+	z-index: 4;
+	cursor: pointer;
+}
+.popup-info_wrap {
+	position: absolute;
+	white-space: nowrap;
+	left: -13px;
+	bottom: 0px;
+	padding: 15px 0 35px;
+	display: none;
+}
+.popup-info {
+	background: #ededed;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 12px 12px 2px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	cursor: default;
+}
+.popup-info span {
+	font-size: 11px;
+	margin-left: 5px;
+	position: relative;
+	line-height: 14px;
+}
+.popup-info .up {
+	background-position: 0 -21px;
+}
+.popup-info .down {
+	background-position: 0 5px;
+}
+.area-cl {
+	height: 36px;
+	position: relative;
+}
+.area-cl span {
+	top: 19px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+.up {
+	color: #8ab440;
+	padding-left: 11px;
+	background: url('i/arrs.gif') 0 -20px no-repeat;
+}
+.down {
+	color: #0688e2;
+	padding-left: 11px;
+	background: url('i/arrs.gif') 0 6px no-repeat;
+}
+span.level-note {
+	width: 14px;
+	height: 8px;
+	margin: 0; 
+	top: -2px;
+	background: url('i/levels.gif') no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	*display: inline;
+	margin-right: 5px;
+}
+
+#note {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: #eeeded;
+	clear: right;
+}
+
+#legend {
+	padding: 20px 20px 10px;
+}
+
+.sshges-note {
+	color: #949494;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	position: absolute;
+	right: 0;
+	width: 375px;
+	margin:12px 20px 20px 0;
+	line-height: 12px;
+}
+.sshges-note span {
+	color: #cd1b1b;
+}
+
+#code {background-color:#eeeeee; position:relative; padding:20px;}
+#code textarea {background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #CCCCCC; color: #666666; font-family: Tahoma; font-size: 11px; height: 14px; padding: 5px; width: 100%; resize:none;}
+#code i {position:absolute; left:0; top:0; width:100%; height:7px; background:url("i/shw-t.png") repeat-x;}
+#code span {color: #144D7F; display: block; font-size: 10px; margin-bottom: 10px; position: relative;}
+.note {margin-bottom:12px; padding-bottom:12px; border-bottom:1px dotted #666; font-size: 11px;}

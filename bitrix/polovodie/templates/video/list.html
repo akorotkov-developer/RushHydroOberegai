@@ -1,0 +1,37 @@
+{reduce:space}
+{mask:main}
+
+<section class="news">
+    <h3>{page_name}</h3>
+    <div class="news-block">
+        {mask:item}{mis:nolist:1}
+        <div class="wrap">
+            <div class="video-link"><a href="{url}">{title}</a></div>
+        </div>
+        {/}{/}
+    </div>    
+    
+    {set:navigation}
+    <div class="page-list">
+        <ul class="pager">
+            <li class="pager_corner"></li>
+            {set:url_prev}
+            <li class="pager_arr"><a href="{url_prev}">предыдущая</a></li>
+            {/}
+            {mask:navigation}
+            <li>
+                {mis:current}<a href="{url}">{title}</a>{/}
+                {set:current}<i class="pager_act"></i><span>{title}</span>{/}
+            </li>
+            {/mask}
+            {set:url_next}
+			<li class="pager_arr arr_rht"><a href="{url_next}">следующая</a></li>
+            {/}
+            <li class="pager_corner pager_corner_r"></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    {/}
+</section>
+	
+{/mask}

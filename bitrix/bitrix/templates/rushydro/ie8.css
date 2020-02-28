@@ -1,0 +1,15 @@
+#gallery .jcarousel-next-disabled, #gallery .jcarousel-prev-disabled{filter:alpha(opacity=30)}
+.prev_news, .next_news, .btn_sbmt input{filter:alpha(opacity=0)}
+.nav_news span.arr{top:1px;}
+#orphus-popup, .b-popup_disclaimer {border:1px solid #D7D7D7;}
+
+.subscribe_fil input {top:-3px;}
+
+#datepicker .ui-datepicker-next, #datepicker .ui-datepicker-prev {padding-bottom: 6px; top: 8px;}
+#datepicker td span, #datepicker td a {padding-bottom: 5px; padding-top: 6px;}
+
+
+.form_gsep_btns .disabled, .form_gsep_btns .disabled i {filter:alpha(opacity=20)}
+.b-popup_disclaimer__overlay {filter:alpha(opacity=70)}
+
+.form_gsep label input {top: 0;}

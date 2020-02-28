@@ -1,0 +1,34 @@
+{reduce:space}
+{mask:main}
+
+<section class="news">
+    <h3>{title}</h3>
+    <div class="news-block">
+        
+        <div class="media-block">
+            <div>
+                {set:link}
+                <iframe width="800" height="600" src="{link}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                {/}
+                {mis:link}
+                {set:file}
+                <video controls="" width="800">
+                    <source src="/{//site_dir}/files/{file}" type="video/{file_ext}">
+                </video>
+                {/}
+                {/}
+            </div>
+        </div>
+
+        <a href="{backurl}" class="link">Медиатека</a>
+        <div class="clear"></div>                
+
+    </div>
+
+    <div class="source">
+        <a class="black-link" href="{source}">Источник: {sourceName}</a>
+    </div>
+
+</section>
+
+{/mask}

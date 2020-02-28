@@ -1,0 +1,31 @@
+{reduce:space}
+{mask:main}
+
+{set:item}
+<section style="width: 100%">
+    <h3 class="orange-back">Вопросы и ответы</h3>
+    {mask:item}
+    {set:main:1}
+    <div class="spoiler">
+        <div class="spoiler-title"><span onclick="toggleBlock('a{id}');">{question}</span></div>
+        <div id="a{id}" class="hidden">{answer}</div>
+    </div>
+    {/}
+    {/mask}
+    <div class="spoiler-sm">
+        <p onclick="toggleBlock('allQuestions');">Смотреть все вопросы</p>
+        <div id="allQuestions" class="hidden">
+            {mask:item}
+            {mis:main:1}
+            <div class="spoiler">
+                <div class="spoiler-title"><span onclick="toggleBlock('a{id}');">{question}</span></div>
+                <div id="a{id}" class="hidden">{answer}</div>
+            </div>
+            {/}
+            {/mask}
+        </div>
+    </div>
+</section>
+{/}
+
+{/mask}

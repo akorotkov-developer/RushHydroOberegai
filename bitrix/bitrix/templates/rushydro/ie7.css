@@ -1,0 +1,17 @@
+.h_indexes {zoom:1;}
+.h_indexes .ind_cont i.r, .fil_wrap i.r, .act_indx i.r{left:auto; right:-1px;}
+.fil_wrap.fil_map_scroll i.r{left:auto; right:-1px;}
+.fil_map_scroll{background-position:0 1px;}
+.s_sub_menu i.t, .s_sub_menu i.r_t{top:-9px;}
+.s_sub_menu i.b, .s_sub_menu i.r_b{bottom:1px;}
+.menu_lvl_last{top:1px;}
+.form_feedback .txtarea{padding-left:0px; zoom:1; position:relative; padding-right:10px;}
+#banners_eng_btns a {display:inline;}
+.form_gsep_btns .disabled i {filter:alpha(opacity=100) !important;}
+
+.in-bl {display: inline; zoom: 1;}
+
+.search_res .search_form .inp{margin-left:-5px;}
+#search .inp input, .search_res .search_form .inp input{padding-top:1px;}
+.main_new .m_news .item span {top:2px;}
+#search .inp {margin-right:17px;}

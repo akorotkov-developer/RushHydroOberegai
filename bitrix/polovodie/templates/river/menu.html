@@ -1,0 +1,17 @@
+{reduce:space}
+{mask:main}
+
+	{set:item}
+    <div class="wrap space-between">
+        <a class="river-link {set:index}active{/}" href="/{site_dir}/">
+            <span class="river-name">Главная</span>
+        </a>
+        {mask:item}
+        <a class="river-link {set:selected}active{/}" href="{url}">
+            <span class="river-name">{title}</span>
+        </a>
+        {/mask}
+    </div>
+	{/}
+
+{/mask}

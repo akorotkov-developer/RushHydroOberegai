@@ -1,0 +1,38 @@
+{reduce:space}
+{mask:main}
+
+    {set:ges}
+    <div class="pavodok-in-social custom_marginbottom">
+        <h2>
+            #Паводок2020<br />
+            в социальных сетях
+        </h2>
+        <ul>
+            {mask:ges}
+            <li>
+                <span class="name">{title}</span>
+                {set:fb}<a href="{fb}" target="_blank" class="fb-icon"></a>{/}
+                {set:vk}<a href="{vk}" target="_blank" class="vk-icon"></a>{/}
+                {set:ok}<a href="{ok}" target="_blank" class="odn-icon"></a>{/}
+                {set:tw}<a href="{tw}" target="_blank" class="tw-icon"></a>{/}
+                {set:instagram}<a href="{instagram}" target="_blank" class="in-icon"></a>{/}
+            </li>
+            {/mask}
+        </ul>
+        <p class="custom_marginbottom">Подписывайтесь и получайте оперативную информацию о прохождении паводка</p>
+    </div>
+    {/}
+
+    {set:index}
+
+       {informer}
+
+        <div>
+            <a href="/{site_dir}/faq/" class="btn">
+                Часто задаваемые вопросы<br />
+                и ответы на них
+            </a>
+        </div>
+    {/}
+
+{/mask}

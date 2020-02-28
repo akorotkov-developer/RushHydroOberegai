@@ -1,0 +1,264 @@
+{reduce:space}
+{mask:main}
+
+
+<div class="col">
+
+    {set:selected}
+    {mask:item}
+        {set:selected}
+            <div class="wrap">
+                <div class="width-300 river-info">
+                    <div class="img-block">
+                        <span>{situation_text}</span>
+                    </div>
+                    <div class="link-block">
+                        <a href="http://voda.mnr.gov.ru/activities/list.php?part=19" target="_blank">Узнать о режимах работы водохранилищ, установленных Федеральным агенством водных ресурсов</a>
+                    </div>
+                </div>
+                <div class="width-300">
+
+                    <div id="ajax_newsblock"></div>
+
+                    {#
+                    <script type="text/javascript">
+                    $(document).ready(function(){
+                        showNews('/handlers/polovodie.php?block=1&limit=3&block_type=inner&river_id=#}{id}{#&new=1', 'ajax_newsblock');
+                    });
+                    </script>
+                    #}
+
+                </div>
+            </div>
+        {/}
+    {/mask}
+    {/}
+
+    <div class="graphic-block">
+        <div class="header-content">
+            <h2>Изменения уровней водохранилищ ГЭС РусГидро на р. {mask:item}{set:selected}{title}{/}{/}</h2>
+        </div>
+
+        <div id="wrap">
+
+			<div class="head-date">
+				<b>Выберите дату</b><input type="text" id="popupDatepicker" value="{date}" />
+				<b>Выберите реку</b><div class="river-select">{mask:item}{set:selected:1}{title}{/}{/mask}<div class="river-select-abs">{mask:item}{mis:selected:1}<a href="{url}">{title}</a>{/}{/mask}</div></div>
+			</div>
+
+			<script>
+
+				$(function(){
+
+					$('body').on('click',function(e){
+						if(!$(e.target).hasClass('river-select')) { $('.river-select-abs').hide() }
+					})
+
+					$('.river-select').on('click',function(){
+						$(this).find('.river-select-abs').slideToggle()
+					})
+
+					$('.popup-trigger').mouseenter(function(){
+						ptop = $(this).position(); ptop = ptop.top+18;
+						$('.popup-info').removeClass('active');
+						$(this).next('.popup-info').css('top',ptop).addClass('active');
+					})
+
+					$('.popup-wrapper').mouseleave(function(){
+						$('.popup-info').removeClass('active');
+					})
+
+					date = new Date;
+
+					function makeCalDate(date) {
+						var d_events = date.getDate().toString();
+						var m_events = 1 + date.getMonth();
+						var y_events = date.getFullYear().toString();
+						if(d_events.length < 2) { d_events = "0" + d_events; }
+						m_events = m_events.toString();
+						if(m_events.length < 2) { m_events = "0" + m_events; }
+						var Date_events = d_events +"."+ m_events +"."+ y_events;
+						return Date_events;
+					}
+
+					today = makeCalDate(date);
+
+					$('#popupDatepicker').datepicker({
+						dateFormat: 'dd.mm.yy',
+						changeMonth: true,
+						changeYear: true,
+						maxDate: '{maxDate}' ,
+						minDate: '13.04.2013',
+						yearRange: "2013:",
+						onSelect: function(dateText,inst) {
+							selDay = inst.selectedDay; if(selDay<10) selDay = '0'+selDay;
+							selMonth = inst.selectedMonth+1; if(selMonth<10) selMonth = '0'+selMonth;
+							document.location.href = '?date=' + inst.selectedYear + '-' + selMonth + '-' +  selDay;
+						}
+
+					});
+				})
+
+			</script>
+
+
+			<div class="informer">
+
+				{set:item41}
+				<div class="data-block" style="margin-right: 30px">
+					<img src="/polovodie/styles/img/informer/zeya.png" alt="" />
+					<div class="informer-block zeya">
+						{item41}
+					</div>
+				</div>
+				{/}
+
+				{set:item40}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/bureya.png" alt="" />
+					<div class="informer-block bureya">
+						{item40}
+					</div>
+				</div>
+				{/}
+
+				{set:item42}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/kolyma.png" alt="" />
+					<div class="informer-block kolyma">
+						{item42}
+					</div>
+					<div class="informer-block ust-sr">
+						{item43}
+					</div>
+				</div>
+				{/}
+
+				{set:item37}
+				<div class="data-block minified" style="transform:scale(.7); left: -135px; margin-bottom: 0">
+					<img src="/polovodie/styles/img/informer/volga.png" alt="" />
+					<div style="position: relative;z-index: 2;width: 892px;height: 31px;background-color: #ffffff;"></div>
+					<div class="informer-block uglich">
+						{item37}
+					</div>
+					<div class="informer-block rybinsk">
+						{item34}
+					</div>
+					<div class="informer-block nijegorod">
+						{item33}
+					</div>
+
+					<div class="informer-block cheboksar">
+						{item38}
+					</div>
+
+					<div class="informer-block jigul">
+						{item31}
+					</div>
+
+					<div class="informer-block saratov">
+						{item35}
+					</div>
+
+					<div class="informer-block voljsk">
+						{item29}
+					</div>
+
+				</div>
+				{/}
+
+				{set:item32}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/kama.png" alt="" />
+					<div class="informer-block kama">
+						{item32}
+					</div>
+					<div class="informer-block votinsk">
+						{item30}
+					</div>
+				</div>
+				{/}
+
+				{set:item36}
+				<div class="data-block" style="margin-bottom: 100px">
+					<img src="/polovodie/styles/img/informer/yenisei.png" alt="" />
+					<div class="informer-block sayano">
+						{item36}
+					</div>
+					<div class="informer-comment"><b>*</b> водохранилище Майнской ГЭС сглаживает неравномерность ежесуточных сбросов СШГЭС, когда Саяно-Шушенская ГЭС ведет глубокое регулирование нагрузки в энергосистеме</div>
+				</div>
+				{/}
+
+				{set:item46}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/angara.png" alt="" />
+					<div class="informer-block irkutsk">
+						{item46}
+					</div>
+					<div class="informer-block bratsk">
+						{item45}
+					</div>
+					<div class="informer-block ust-ilim">
+						{item44}
+					</div>
+					<div class="informer-block boguch">
+						{item28}
+					</div>
+				</div>
+				{/}
+
+				{set:item39}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/ob.png" alt="" />
+					<div class="informer-block novosib">
+						{item39}
+					</div>
+				</div>
+				{/}
+
+				{set:item49}
+				<div class="data-block" style="margin-right: 20px">
+					<img src="/polovodie/styles/img/informer/coissu.png" alt="" />
+					<div class="informer-block irganai">
+						{item49}
+					</div>
+				</div>
+				{/}
+
+				{set:item48}
+				<div class="data-block">
+					<img src="/polovodie/styles/img/informer/sulak.png" alt="" />
+					<div class="informer-block chirkeysk">
+						{item48}
+					</div>
+				</div>
+				{/}
+
+			</div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="col width-325">
+    {networks}
+    {video}
+    <div>
+        <a href="#" class="btn" onclick="showModal('textModal')">
+            {mask:item}
+				{set:selected}{subheader}{mis:subheader}{title}{/}
+				{/}
+			{/}
+        </a>
+    </div>
+</div>
+
+
+
+
+
+{/mask}

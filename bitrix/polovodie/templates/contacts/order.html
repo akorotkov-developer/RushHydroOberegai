@@ -1,0 +1,76 @@
+{reduce:space}
+{mask:main}
+
+{#
+<script type="text/javascript">
+$(document).ready(function(){
+    #}{set:showform}{#
+    showModal('messageModal');
+    #}{/}{#
+    
+	$('#contactform').validate({
+		rules:{
+			fio:'required',
+			email:{
+				required: true,
+				email:true
+			},
+			message:'required',
+			recaptcha:'required'
+		},
+		messages:{
+			fio:"Обязательное поле",
+			email:{
+				required: "Обязательное поле",
+				email:"Поле неправильно заполнено"
+			},
+			message:"Обязательное поле",
+			recaptcha:"Подтвердите, что Вы не робот"
+		}
+	});
+});
+</script>
+#}
+
+    <div id="messageModal" class="hidden">
+        <div class="modal-bg" onclick="closeModal('messageModal'); {set:showform}document.location.href='/{site_dir}/';{/}"></div>
+        <div class="modal">
+            <div class="wrap space-between modal-header">
+                <div class="wrap center">
+                    <h3>
+                        {set:sended}Сообщение успешно отправлено{/}
+                        {mis:sended}Отправить сообщение{/}
+                    </h3>
+                </div>
+                <div>
+                    <a class="closeModal" onclick="closeModal('messageModal'); {set:showform}document.location.href='/{site_dir}/';{/}">
+                        <img src="/{site_dir}/img/close.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            {mis:sended}
+            {set:error}<h3 style="color: #f00;">{error}</h3>{/set}
+            <form method="post" action="" name="contactform" id="contactform" enctype="multipart/form-data">
+                <input type="text" name="check" value="" style="display:none;" />
+                <input type="text" name="fio" value="{post[fio]}" placeholder="ФИО" required />
+                <input type="email" name="email" value="{post[email]}" placeholder="E-mail" required />
+                <textarea name="message" placeholder="Текст сообщения" rows="3" required>{post[message]}</textarea>
+                <div class="file-upload">
+                    <p>Вы можете прикрепить файл</p>
+                    <label for="input-file" class="btn-file">Обзор...</label>
+                    <input id="input-file" type="file" name="file" class="hidden" onchange="addFiles();" />
+                    <ol id="upload-file"></ol>
+                </div>
+				
+				<script>
+					function recaptchaProof(){ $('#recaptchaInput').val('succes'); $('#contactform').valid(); }
+				</script>							
+				<div class="g-recaptcha" data-sitekey="6LeVa08UAAAAAKN1nVlxtCTe9jetm6VwJD4vMWnU" data-callback="recaptchaProof" style="margin-bottom: 20px"></div>
+				<input id="recaptchaInput" name="recaptcha" value="" type="text" style="position: absolute; left: -9999px" />
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            {/}
+        </div>
+    </div>
+
+{/mask}

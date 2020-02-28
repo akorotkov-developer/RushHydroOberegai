@@ -1,0 +1,173 @@
+string(11) "
+<br />
+ "
+string(1397) "<p>
+<p>�</p>
+<p>
+<table class="mceItemTable" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td><img alt="icon" src="http://www.rushydro.ru/pic/icon_pdf.gif" ></td>
+<td style="PADDING-LEFT: 10px" >
+<p><a href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2010/IFRS_FY2010_RUS.pdf"  target="_blank">Консолидированная финансовая отчетность в  
+соответствии
+с международными стандартами финансовой отчетности и отчет  
+независимого
+
+
+
+
+аудитора 31 декабря 2010</a></p></td></tr></tbody></table></p><p>�</p>
+<table class="mceItemTable" border="0" cellpadding="0" cellspacing="0"><tbody><tr></tr><tr><td><img alt="icon" src="http://www.rushydro.ru/pic/icon_pdf.gif" ></td><td style="padding-left: 10px;" >
+<p><a href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2010/6m_2010_IFRS_FS_RusHydro_Group_rus.pdf"  target="_blank">Консолидированная промежуточная сокращенная финансовая информация группы �РусГидро� за шесть месяцев, закончившихся 30 июня 2010, и по состоянию на эту дату </a></p></td></tr></tbody></table>
+<p>�</p>"
+string(2451) "<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" >
+<P><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2009/RusHydro_IFRS_2009_rus.pdf" target=_blank >Консолидированная финансовая информация группы �РусГидро�, подготовленная в соответствии с МСФО за год, закончившийся 31 декабря 2009 </A></P></TD></TR></TBODY></TABLE></P>
+<P><BR></P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" >
+<P><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2009/RusHydro_IFRS_2009_eng.pdf" target=_blank >Consolidated financial statements of RusHydro Group prepared in accordance with IFRS as at� and for the year ended 31 December 2009</A></P></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" >
+<P><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2009/RusHydro_6m2009_IFRS_Review__rus_.pdf" target=_blank >Консолидированная промежуточная сокращенная финансовая информация группы �РусГидро� (не прошедшая аудиторскую проверку) за 6 месяцев, закончившихся 30 июня 2009 и по состоянию на эту дату (русский)</A></P></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" >
+<P><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2009/RusHydro_6m2009_IFRS_Review__eng_.pdf" target=_blank >Consolidated interim condensed financial information (unaudited) of RusHydro Group�as at and for the six monthes ended 30 June 2009</A></P></TD></TR></TBODY></TABLE></P>"
+string(2931) "<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2008/RusHydro_IFRS_2008_rus.pdf" target=_blank >Консолидированная и комбинированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МСФО за 2008 год</A></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><A href="http://www.eng.rushydro.ru/file/main/english/investors/reports/finreports/iasfinrep/RusHydro_IFRS_2008_eng.pdf" target=_blank >Консолидированная и комбинированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МСФО за 2008 год - IFRS Eng.</A></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/facts/Susch._fakt_OAO_RusGidro_ot_30.10.2008.pdf" ><FONT color=#0000ff></FONT></A>
+<DIV><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2008/Konsolidirovannaya_otchetnost__po_mfso_za_1_polugodie_2008.pdf" target=_blank >Консолидированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МСФО за�I полугодие 2008�года</A></DIV></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/facts/Susch._fakt_OAO_RusGidro_ot_30.10.2008.pdf" ><FONT color=#0000ff></FONT></A>
+<DIV><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2008/Konsolidirovannaya_otchetnost__po_MFSO_za_1_polugodie_2008__-_eng.pdf" target=_blank >Консолидированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МСФО за I полугодие 2008 года -� IFRS Eng.�</A></DIV></TD></TR></TBODY></TABLE></P>"
+string(1704) "<P>� </P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" mce_src="/pic/icon_pdf.gif"></TD>
+<TD style="PADDING-LEFT: 10px" mce_style="padding-left: 10px;">
+<DIV><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2007/Godovaya_finansovaya_otchetnost__po_MFSO__russk._.pdf" target=_blank mce_href="/file/main/global/investors/disclosure/reports/finreports1/2007/Godovaya_finansovaya_otchetnost__po_MFSO__russk._.pdf">Консолидированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МФСО за 2007 год</A></DIV></TD></TR></TBODY></TABLE></P>
+<P>�</P>
+<P>
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" mce_src="/pic/icon_pdf.gif"></TD>
+<TD style="PADDING-LEFT: 10px" mce_style="padding-left: 10px;">
+<DIV><A href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2007/Godovaya_finansovaya_otchetnost__po_MFSO_2007__Ang._.pdf" target=_blank mce_href="/file/main/global/investors/disclosure/reports/finreports1/2007/Godovaya_finansovaya_otchetnost__po_MFSO_2007__Ang._.pdf">Консолидированная финансовая отчетность ОАО "РусГидро" в соответствии с международными стандартами МФСО за 2007 год -�IRFS Eng.</A>�<FONT color=#800080></FONT></DIV></TD></TR></TBODY></TABLE></P>
+<P>��</P>
+<P>������ </P>
+<P>���</P>"
+string(1237) "<P>
+<DIV style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px" >
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><U><A href="http://www.rushydro.ru/res/files/hydroogk/finreports/consolidated_financial_statements_2006.pdf" target=_blank >Консолидированная финансовая отчетность ОАО ГидроОГК, подготовленная в соответствии с международными стандартами МСФО за 2006 год</A></U></TD></TR></TBODY></TABLE></DIV>
+<DIV style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px" >
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" ><A href="http://www.rushydro.ru/res/files/hydroogk/finreports/consolidated_financial_statements.pdf" target=_blank >Консолидированная отчетность ОАО ГидроОГК в соответствии со стандартами МСФО (IFRS, Eng)</A></TD></TR></TBODY></TABLE></DIV>
+<P>�</P>
+<DIV></DIV>"
+string(673) "<P>
+<DIV style="PADDING-BOTTOM: 5px; PADDING-TOP: 5px" >
+<TABLE class=mceItemTable border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR>
+<TD><IMG alt=icon src="http://www.rushydro.ru/pic/icon_pdf.gif" ></TD>
+<TD style="PADDING-LEFT: 10px" >
+<P>29�октября 2006</P>
+<P><A href="http://www.rushydro.ru/res/files/hydroogk/finreports/consolidated_financial_statements_2005_part1.pdf" target=_blank >Консолидированная финансовая отчетность ОАО ГидроОГК в соответствии со стандартами МСФО IRFS</A> </P>
+<DIV></DIV></TD></TR></TBODY></TABLE></DIV>
+<P>�</P>
+<P>�</P>
+<DIV></DIV>"
+string(2080) "
+<table class="mceItemTable" border="0" cellpadding="0" cellspacing="0"> 
+  <tbody> 
+    <tr></tr>
+   
+    <tr><td><img alt="icon" src="http://www.rushydro.ru/pic/icon_pdf.gif"   /></td><td style="padding-left: 10px" > 
+        <p><a href="http://www.rushydro.ru/upload/iblock/c30/IFRS_RusHydro_12m2011__rus.pdf"  target="_blank" >Консолидированная финансовая отчетность в соответствии с международными стандартами финансовой отчетности и отчет независимого аудитора 31 декабря 2011</a></p>
+       </td></tr>
+   </tbody>
+ </table>
+ 
+<p> 
+  <br />
+ </p>
+ 
+<table class="mceItemTable" border="0" cellpadding="0" cellspacing="0"> 
+  <tbody> 
+    <tr></tr>
+   
+    <tr><td><img alt="icon" src="http://www.rushydro.ru/pic/icon_pdf.gif"  /></td><td style="padding-left: 10px"> 
+        <p><a href="http://www.rushydro.ru/upload/iblock/ae8/IFRS RusHydro_9m2011_rus.pdf" target="_blank" >Консолидированная промежуточная неаудированная сокращенная финансовая информация группы �РусГидро� за девять месяцев, закончившихся 30 сентября 2011</a></p>
+       </td></tr>
+   </tbody>
+ </table>
+ 
+<p> 
+  <br />
+ </p>
+ 
+<table class="mceItemTable" border="0" cellpadding="0" cellspacing="0"> 
+  <tbody> 
+    <tr></tr>
+   
+    <tr><td><img alt="icon" src="http://www.rushydro.ru/pic/icon_pdf.gif"  /></td><td style="padding-left: 10px"> 
+        <p><a href="http://www.rushydro.ru/file/main/global/investors/disclosure/reports/finreports1/2011/IFRS_RusHydro_6m2011_rus.PDF" target="_blank" >Консолидированная промежуточная сокращенная финансовая информация группы «РусГидро» за шесть месяцев, закончившихся 30 июня 2011 </a></p>
+       </td></tr>
+   </tbody>
+ </table>
+ "
+string(795) "<table class="mceItemTable" border="0" cellpadding="0" cellspacing="0"><tbody><tr></tr><tr><td><img alt="icon" src="../../../../../../pic/icon_pdf.gif" mce_src="/pic/icon_pdf.gif"></td><td style="padding-left: 10px;" mce_style="padding-left: 10px;">
+<p><a href="/file/main/global/investors/disclosure/reports/finreports1/2012/IFRS_RusHydro_3m2012_rus.pdf" mce_href="/file/main/global/investors/disclosure/reports/finreports1/2012/IFRS_RusHydro_3m2012_rus.pdf" target="_blank">Консолидированная промежуточная неаудированная сокращенная финансовая информация группы �РусГидро� за три месяца, закончившихся 31 марта 2012</a></p></td></tr></tbody></table><p><br mce_bogus="1"></p>"
