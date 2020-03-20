@@ -85,7 +85,8 @@ img.img-cont_r {float: right; margin: 4px 0 15px 15px;}
 #header .info{width: 172px; position:relative; float: right; right: 0px; top: 42px; padding-left:15px; white-space: nowrap;}
 .version_eng #header .info{top:55px !important;}
 #header .info .i_txt{font-size:0.9em;}
-#header .info .i_phone{margin-bottom:5px; font-size:1.6em; line-height: 1.35em; color:#E66A25; font-family:Calibri, Arial; font-weight:bold;}
+#header .info .i_phone{-webkit-appearance: none; margin-bottom:5px; font-size:1.6em; line-height: 1.35em; color:#E66A25; font-family:Calibri, Arial; font-weight:bold;}
+#header .info .i_phone.i_phone-new{-webkit-appearance: none; margin-bottom:0px; font-size:1.6em; line-height: 1.35em; color:#E66A25; font-family:Calibri, Arial; font-weight:bold;}
 #header .info .i_link a {font-size:1.2em; color:#E66A25; font-family:Calibri, Arial; font-weight:bold;}
 
 #header #buttons_link {
@@ -761,7 +762,7 @@ background: #f7f7f7;
 #fil_map i#dot_pauzhet{top:79px; left:251px;}
 #fil_map i#dot_usges{top:49px; left:195px;}
 #fil_map i#dot_esko-ees{top:72px; left:38px;}
-#fil_map i#dot_yakutia{top:100px; left:194px;}
+#fil_map i#dot_yakutia{top:66px; left:58px;}
 #fil_map i#dot_hydroinvest{top:100px; left:61px;}
 #fil_map i#dot_fewind{top:140px; left:221px;}
 #fil_map i#dot_mges-altai{top:129px; left:116px;}
@@ -1918,7 +1919,7 @@ position: relative;
 .graystyle #header img,
 .graystyle #menu img { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
 .graystyle #menu { background-color: #000000; }
-.graystyle #header .info .i_phone { color: #666; }
+.graystyle #header .info .i_phone { color: #666; -webkit-appearance: none;}
 .graystyle .header-btn-feedback { color: #666; background-image: url('i/feedback_icon_gray.png'); }
 .graystyle .header-social-ico { background-image: url('i/i-header_fb_gray.png'); }
 .graystyle .header-social-ico__insta { background-image: url('i/i-header_insta_gray.png'); }

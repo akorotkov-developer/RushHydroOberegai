@@ -16,7 +16,7 @@
 	<?}?>
 
 	<?if(!RhdHandler::isFilial()){?>
-		<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style.css?2" />
+		<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style.css?23" />
 	<?}?>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />

@@ -1,0 +1,161 @@
+
+#header{ padding: 0 15px 0 10px; width:1030px; box-sizing: border-box; height: 110px !important; }
+#header .icons{ display: none }
+#header .logo{ top: 15px;}
+#header .logo.logo-new{ top: 12px;}
+#header .logo_flash{ top:20px; }
+
+#search { width: 22%; right: auto; left: 33%; top: 25px; }
+.new-search {top: 15px!important;}
+#header .lang{ right: auto; left: 33%; top: 75px; }
+#header .lang.lang-new{ right: auto; left: 33%; top: 62px; }
+
+#header #buttons_link .header-btn-feedback { display: none }
+#header #buttons_link { left: 33%; top: 71px; margin-left: 133px }
+#header .buttons_link-new { left: 33%; top: 58px!important; margin-left: 133px }
+#header .info { top: 25px }
+#header .info.new-info { top: 10px }
+#header .info-left { position: absolute; top: 0; left: -195px; }
+#header .info-left .header-btn-feedback { display: block }
+#header .info-left.new-info-left { position: absolute; top: 0; left: -232px; }
+#header .header-sitemap { position: absolute; width: 50px; height: 20px; top: 73px; left: 33%; margin-left: 75px; border-left: 1px solid #e1e1e1 }
+#header .header-sitemap.header-sitemap-new { position: absolute; width: 50px; height: 20px; top: 60px; left: 33%; margin-left: 75px; border-left: 1px solid #e1e1e1 }
+#header .header-sitemap a { display: block; height: 100%; background: url(../i/sitemap.png) no-repeat 50% 50%; }
+
+#menu .item { margin-right: 6px }
+#menu .last-item { margin-right: 6px !important }
+#menu .nomargin { margin-right: 0 !important }
+
+#content{ padding: 0 10px 10px 10px; }
+
+
+.bl_main .lft_cont{float:none; width:auto}
+/*
+.bl_main .rht_cont{ display: none; }
+*/
+
+.main_new .m_line { background: #f98d0f; background: linear-gradient(to right,#F58040,#f4af08,#0066A6) }
+.b_filials{ display: none }
+
+.ban_rht { margin-bottom: 30px; }
+.h_indexes { margin-bottom: 10px; }
+.rht_links_news { margin-bottom: 10px }
+
+#footer .b-footer_wrap {
+	border-top: none;
+	border-bottom: none;
+	padding: 10px 0;
+	margin:0 auto;
+	background: #0066A6 ;
+	color: #fff;
+	margin-bottom: 26px;
+	min-height: 40px
+}
+
+#footer .b-footer_info {
+	padding: 0 20px;
+	width: auto;
+	min-width: 965px;
+	max-width: 1300px;
+	margin:0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+#footer .b-footer_info td {
+	padding:0 25px 0 0;
+}
+
+#footer .b-footer_orphus {
+	position: relative;
+	float: right;
+	right: 0;
+	padding: 3px 5px 5px 65px;
+	color:#fff;
+	background: url(../i/iorphus.png) 15px 5px no-repeat;
+}
+
+#footer .b-footer_enterlink { color: #fff; margin: 0; position: absolute; top: 10px; right: 320px; width: 170px; text-align: right }
+.b-footer_info a { color: #fff; text-decoration: underline !important }
+
+.footer-add-link {
+	padding: 0 0 22px 30px;
+	width: 1030px;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 13px
+}
+.footer-add-link a { border: none }
+.footer-add-link .footer-add-href { border-bottom: 1px solid #58bfff }
+.footer-add-link .footer-add-href:hover { text-decoration: none !important }
+.footer-add-link img { vertical-align: middle; margin-right: 11px }
+/*
+#footer .b-footer_logos {
+	width: auto;
+	min-width:990px;
+	max-width: 1300px;
+	margin:0 auto;
+	padding: 0 3%;
+	box-sizing: border-box
+}
+*/
+
+.water-level-wrapper { padding-bottom: 10px }
+.water-level_brd { border: 1px solid #e5e5e5; padding: 10px 13px; border-radius: 0 7px 7px 7px;  }
+
+
+.water-level_titles { overflow: hidden; position: relative; z-index: 1; top: 1px }
+.water-level_title { font-weight: bold; padding: 10px 13px; float: left; color: #00a0ff; cursor: pointer }
+.water-level_title span { border-bottom: 1px dashed #00a0ff }
+.water-level_title.active { color: #E66A25; font-size: 12px; cursor: default; border: 1px solid #e5e5e5; border-bottom: none; background: #fff; border-radius: 7px 7px 0 0; }
+.water-level_title.active span { border-color: #fff }
+
+.water-level_options { position: relative }
+.water-level_list { position: relative; z-index: 10 }
+.water-level_names { overflow: hidden }
+.water-level_list-name { margin-bottom: 10px; cursor: pointer }
+.water-level_list-name span { color: #00a0ff; font-size: 12px; border-bottom: 1px dashed #00a0ff; position: relative;  }
+.water-level_list-name i { border: 4px solid transparent; border-top-color: #00a0ff; display: inline-block; vertical-align: middle; margin: 0 0 0 5px; position: relative; top: 1px }
+.water-level_link { position: absolute; top: 0; right: 0 }
+.water-level_block-text { padding: 5px; line-height: 1.3em }
+
+.plot-wrapper { opacity: 0; visibility: hidden; height: 1px; height: 100px; position: absolute; width: 290px; }
+.plot-wrapper.active { opacity: 1; visibility: visible; position: relative; height: 100px; left: 5px }
+
+#menu .sub_menu.wide-sub_menu { left: auto; right: -1px; width: 988px; }
+
+.water-level_popup { position: relative }
+.water-level_abs { position: absolute; border: 1px solid #ddd; padding: 5px 0; background: #fff; z-index: 1; top: -8px; left: 0; box-shadow: 0 2px 3px #ddd; width: 200px }
+.water-level_popup-item { padding: 4px 10px; cursor: pointer }
+.water-level_popup-item:hover { background: #ecf3ff }
+.water-level_scroll { max-height: 100px; overflow-y: auto }
+
+.filial-menu-list { overflow: hidden; padding: 0 0 0 10px  }
+.filial-menu-list_title { color: #E66A25; font-size: 12px; text-transform: uppercase; margin-bottom: 9px; font-family:'CorpidOT' }
+.filial-menu-list_item { font-size: 12px; margin-bottom: 6px; line-height: 1.2em;  }
+.filial-menu-list_left { border-right: 1px solid #d7d7d7; float: left; width: 230px }
+.filial-menu-list_right { overflow: hidden; padding-left: 30px }
+.filial-menu-list_col { float: left; width: 230px; box-sizing: border-box; padding-right: 20px }
+
+.water-level-wrapper .informer-wrapper { display: none; position: relative }
+.water-level-wrapper .informer-wrapper.active { display: block }
+.water-level-wrapper .informer-legend { position: absolute; top: -34px; right: 0; color: #111; font-size: 0; width: 100px }
+.water-level-wrapper .informer-legend span { display: inline-block; vertical-align: middle; font-size: 9px; margin-left: 5px; }
+.water-level-wrapper .informer-legend span:before { content: ''; display: inline-block; vertical-align: middle; width: 15px; border-bottom: 1px dashed #fe6a00; margin-right: 4px; position: relative; top: -1px }
+.water-level-wrapper .informer-legend span:first-child { position: absolute; top: 15px; right: 0; background: #fff }
+.water-level-wrapper .informer-legend span:nth-child(2n) { display: none }
+
+.informer-data-popup { position: absolute; color: #223B8E; font-size: 9px; z-index: 200; background: #fff; }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,6 +12,12 @@ $arUrlRewrite = array(
 		"ID"	=>	"",
 		"PATH"	=>	"/ges/teams/games_7/detail.php",
 	),
+    array(
+        "CONDITION"	=>	"#^/ges/teams/8/(.*)/.*#",
+        "RULE"	=>	"ELEMENT_CODE=$1",
+        "ID"	=>	"",
+        "PATH"	=>	"/ges/teams/8/detail.php",
+    ),
 	array(
 		"CONDITION"	=>	"#^/ges/teams/6_games/(.*)/.*#",
 		"RULE"	=>	"ELEMENT_CODE=$1",
