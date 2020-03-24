@@ -32,11 +32,7 @@
             <?php } else if(RhdHandler::isFilial()){?>
                 <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89.png" class="logo" width="289" height="89" /></a>
             <?php } else {?>
-                <?if ($_GET["tst"] == "tst") {?>
-                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/logo-main_new.png" class="logo" width="224" height="71" /></a>
-                <?} else {?>
-                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/logo-main_new.png" class="logo logo-new" width="224" height="71" /></a>
-                <?}?>
+                <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/logo-main_new.png" class="logo logo-new" width="224" height="71" /></a>
             <?php }?>
 
             <div class="icons">
@@ -86,11 +82,8 @@
                     $url .= "corporate/general-meeting/forthcoming/subscribe/";
                 }
                 ?>
-                <?if ($_GET["tst"] == "tst") {?>
-                    <div class="lang">
-                <?} else {?>
                     <div class="lang lang-new">
-                <?}?>
+
                     <?php if (RhdHandler::isEnglish()) { ?>
                         <a href="<?=$url?>">РУС</a><span>ENG</span>
                     <?php } else { ?>
@@ -100,19 +93,11 @@
             <?}?>
 
 			<?if(!RhdHandler::isFilial()){?>
-                <?if ($_GET["tst"] == "tst") {?>
-                    <div class="header-sitemap "><a href="/sitemap"></a></div>
-			    <?} else {?>
-                    <div class="header-sitemap header-sitemap-new"><a href="/sitemap"></a></div>
-                <?}?>
+                <div class="header-sitemap header-sitemap-new"><a href="/sitemap"></a></div>
 			<?}?>
 
             <?php if (!RhdHandler::isEnglish()) { ?>
-                <?if ($_GET["tst"] == "tst") {?>
-                    <div id="buttons_link">
-                <?} else {?>
                     <div id="buttons_link" class="buttons_link-new">
-                <?}?>
                     <!--<a href="http://zakupki.rushydro.ru/" target="_blank" class="header-btn-purchases">Закупки</a>-->
                     <!--<a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>-->
                    <div class="header-social">
@@ -203,30 +188,14 @@
                 </div>
             <?php } ?>
 
-
-            <?if ($_GET["tst"] == "tst") {?>
-                <div class="info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
-            <?} else {?>
                 <?if (RhdHandler::isMainSite()) {?>
                     <div class="info new-info new-info2" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
                 <?} else {?>
                     <div class="info new-info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
                 <?}?>
-            <?}?>
+
                 <?php if (!RhdHandler::isEnglish()) { ?>
-                  <?if ($_GET["tst"] == "tst") {?>
-                        <p class="i_txt">Многоканальный телефон</p>
-                        <p style="margin-bottom: -7px;" class="i_phone">+7 (800) 333 80 00</p>
-                        <p class="i_phone ">+7 (495) 122-05-55</p>
-                        <div class="info-left">
-                            <p class="i_txt">&laquo;Горячая линия&raquo; для акционеров</p>
-                            <p class="i_phone">8 (800) 200 61 12</p>
-                            <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
-                        </div>
-                        <div class="info-left">
-                            <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
-                        </div>
-				  <?} else {?>
+
                         <p class="i_txt">Многоканальный телефон</p>
                         <p style="margin-bottom: -7px;" class="i_phone i_phone-new">+7 800 333 80 00</p>
                         <p class="i_phone i_phone-new">+7 495 122-05-55</p>
@@ -239,7 +208,7 @@
                                 <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
                             </div>
                         <?}?>
-				  <?}?>
+
                 <?php } else { ?>
 
                   <p class="i_txt">Phone number</p>
