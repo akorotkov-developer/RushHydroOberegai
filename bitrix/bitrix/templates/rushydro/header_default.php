@@ -10,7 +10,11 @@
     <?$APPLICATION->ShowPanel();?>
 
     <div id="wrap">
-        <div id="header"<?php if (RhdHandler::isFilial()) { ?> style="height:182px"<?}?>>
+        <?if ($_GET["tst"] == "tst") {?>
+        <div id="header" class="header-filial">
+        <?} else {?>
+            <div id="header"<?php if (RhdHandler::isFilial()) { ?> style="height:182px"<?}?>>
+        <?}?>
 
             <?php if (!RhdHandler::isFilial() && RhdHandler::isAtRoot()) { ?>
 				<!--
@@ -28,15 +32,26 @@
             <?php if (RhdHandler::isEnglish()) { ?>
                 <a href="<?=RhdPath::createUrl(RhdHandler::getEnglishSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/rushydro_l.png" class="logo" /></a>
             <?php } else if(RhdHandler::isDZO()){?>
-                <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89_filials.png" class="logo" /></a>
+                <?if ($_GET["tst"] == "tst") {?>
+                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89_filials.png" class="logo logo-filial" width="224" height="71"/></a>
+                <?} else {?>
+                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89_filials.png" class="logo" /></a>
+                <?}?>
             <?php } else if(RhdHandler::isFilial()){?>
-                <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89.png" class="logo" width="289" height="89" /></a>
+                <?if ($_GET["tst"] == "tst") {?>
+                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89.png" class="logo" width="289" height="89" /></a>
+                <?} else {?>
+                    <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/289x89.png" class="logo" width="289" height="89" /></a>
+                <?}?>
             <?php } else {?>
                 <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>"><img src="<?=SITE_TEMPLATE_PATH?>/i/logo-main_new.png" class="logo logo-new" width="224" height="71" /></a>
             <?php }?>
 
-            <div class="icons">
-                <a href="<?=RhdHandler::getSiteRoot()?>"></a>
+            <?if ($_GET["tst"]) {?>
+                <div class="icons icons-filial">
+            <?} else {?>
+                <div class="icons">
+            <?}?>
                 <a href="<?=RhdPath::createUrl(RhdHandler::getSiteCode(), 'sitemap')?>" class="i_2"></a>
                 <?php
 
@@ -96,8 +111,16 @@
                 <div class="header-sitemap header-sitemap-new"><a href="/sitemap"></a></div>
 			<?}?>
 
-            <?php if (!RhdHandler::isEnglish()) { ?>
-                    <div id="buttons_link" class="buttons_link-new">
+            <?php if (!RhdHandler::isEnglish()) {?>
+                    <?if (RhdHandler::isFilial()) {?>
+                        <?if ($_GET["tst"] == "tst") {?>
+                            <div id="buttons_link" class="buttons_link-new buttons_link-new-filial">
+                        <?} else {?>
+                             <div id="buttons_link" class="buttons_link-new">
+                        <?}?>
+                    <?} else {?>
+                        <div id="buttons_link" class="buttons_link-new">
+                    <?}?>
                     <!--<a href="http://zakupki.rushydro.ru/" target="_blank" class="header-btn-purchases">Закупки</a>-->
                     <!--<a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>-->
                    <div class="header-social">
@@ -191,7 +214,11 @@
                 <?if (RhdHandler::isMainSite()) {?>
                     <div class="info new-info new-info2" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
                 <?} else {?>
-                    <div class="info new-info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                    <?if ($_GET["tst"] == "tst") {?>
+                        <div class="info new-info new-info-filial" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                    <?} else {?>
+                        <div class="info new-info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                    <?}?>
                 <?}?>
 
                 <?php if (!RhdHandler::isEnglish()) { ?>
@@ -206,6 +233,13 @@
                                 <p class="i_txt">&laquo;Горячая линия&raquo; для работников РусГидро по<br> вопросам противодействия распространению<br> коронавируса</p>
                                 <p class="i_phone i_phone-new">+7 800 333 80 00</p>
                                 <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
+                            </div>
+                        <?}?>
+                        <?if ($_GET["tst"] == "tst") {?>
+                            <div class="info-left new-info-left new-info-left-filial">
+                                <p class="i_txt">&laquo;Горячая линия&raquo; для работников РусГидро по<br> вопросам противодействия распространению<br> коронавируса</p>
+                                <p class="i_phone i_phone-new">+7 800 333 80 00</p>
+                                <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback header-btn-feedback-filial">Линия доверия</a>
                             </div>
                         <?}?>
 
@@ -227,7 +261,11 @@
             </div>
             <?php if (RhdHandler::isFilial()) { ?>
                 <div style="clear:right"></div>
-                <div class="name_filials">
+                <?if ($_GET["tst"] == "tst") {?>
+                    <div class="name_filials name_filials-new">
+                <?} else {?>
+                    <div class="name_filials">
+                <?}?>
                     <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode())?>" class="link_main">www.rushydro.ru</a>
                     <div><a href="<?=RhdHandler::getSiteRoot()?>"><?=RhdHandler::getSiteName()?></a></div>
                 </div>

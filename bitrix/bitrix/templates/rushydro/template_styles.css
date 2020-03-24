@@ -2009,3 +2009,47 @@ width:200px;
 .coolTable-big tr.tr_tbl_sub td:first-child {padding-left: 2px;}
 .coolTable-big tr.tbl_h td, .coolTable-big td.tbl_h {color:#fff; font-weight:bold; padding:16px 2px; border:0; background:#b0ccd0 url(i/tbl_bg.gif) repeat-x;}
 .coolTable-big td ul{margin-left: 20px;}
+
+.new-search.new-search-filial {
+	width: 22%;
+	right: auto;
+	left: 31%;
+	top: 29px!important;
+}
+#header .icons.icons-filial {
+	position: absolute;
+	left: 412px;
+	top: 69px;
+}
+#header .info-left.new-info-left.new-info-left-filial {
+	position: absolute;
+	top: 0;
+	left: -260px;
+}
+#header .logo.logo-filial {
+	position: absolute;
+	left: 0px;
+	top: 20px;
+}
+#header .info.new-info.new-info-filial {
+	right: -30px;
+	padding-left: 20px;
+	width: auto;
+}
+.header-filial {
+	overflow: inherit!important;
+}
+.name_filials.name_filials-new {
+	right: -44px;
+}
+#header .name_filials.name_filials-new div a {
+	margin-left: 73px;
+}
+#header #buttons_link.buttons_link-new.buttons_link-new-filial {
+	left: 434px;
+	position: absolute;
+	top: 62px;
+}
+.header-btn-feedback-filial {
+	display: block!important;
+}
