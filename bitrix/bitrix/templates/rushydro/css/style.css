@@ -5,21 +5,22 @@
 #header .logo.logo-new{ top: 12px;}
 #header .logo_flash{ top:20px; }
 
-#search { width: 22%; right: auto; left: 33%; top: 25px; }
+#search { width: 22%; right: auto; left: 31%; top: 25px; }
 .new-search {top: 15px!important;}
 #header .lang{ right: auto; left: 33%; top: 75px; }
-#header .lang.lang-new{ right: auto; left: 33%; top: 62px; }
+#header .lang.lang-new{ right: auto; left: 31%; top: 62px; }
 
 #header #buttons_link .header-btn-feedback { display: none }
-#header #buttons_link { left: 33%; top: 71px; margin-left: 133px }
+#header #buttons_link { left: 31%; top: 71px; margin-left: 133px }
 #header .buttons_link-new { left: 33%; top: 58px!important; margin-left: 133px }
 #header .info { top: 25px }
 #header .info.new-info { top: 10px }
+#header .info.new-info.new-info2 { top: 10px; right: -15px; width: auto;}
 #header .info-left { position: absolute; top: 0; left: -195px; }
 #header .info-left .header-btn-feedback { display: block }
-#header .info-left.new-info-left { position: absolute; top: 0; left: -232px; }
+#header .info-left.new-info-left { position: absolute; top: 0; left: -260px; }
 #header .header-sitemap { position: absolute; width: 50px; height: 20px; top: 73px; left: 33%; margin-left: 75px; border-left: 1px solid #e1e1e1 }
-#header .header-sitemap.header-sitemap-new { position: absolute; width: 50px; height: 20px; top: 60px; left: 33%; margin-left: 75px; border-left: 1px solid #e1e1e1 }
+#header .header-sitemap.header-sitemap-new { position: absolute; width: 50px; height: 20px; top: 60px; left: 31%; margin-left: 75px; border-left: 1px solid #e1e1e1 }
 #header .header-sitemap a { display: block; height: 100%; background: url(../i/sitemap.png) no-repeat 50% 50%; }
 
 #menu .item { margin-right: 6px }

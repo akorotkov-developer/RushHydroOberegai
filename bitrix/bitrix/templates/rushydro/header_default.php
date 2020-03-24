@@ -207,7 +207,11 @@
             <?if ($_GET["tst"] == "tst") {?>
                 <div class="info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
             <?} else {?>
-                <div class="info new-info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                <?if (RhdHandler::isMainSite()) {?>
+                    <div class="info new-info new-info2" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                <?} else {?>
+                    <div class="info new-info" style="<?php if(RhdHandler::isFilial()){?>top:25px;<?}?><?php if(RhdHandler::isEnglish()){?>top:10px;<?}?> ">
+                <?}?>
             <?}?>
                 <?php if (!RhdHandler::isEnglish()) { ?>
                   <?if ($_GET["tst"] == "tst") {?>
@@ -217,6 +221,9 @@
                         <div class="info-left">
                             <p class="i_txt">&laquo;Горячая линия&raquo; для акционеров</p>
                             <p class="i_phone">8 (800) 200 61 12</p>
+                            <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
+                        </div>
+                        <div class="info-left">
                             <a href="<?=RhdPath::createUrl(RhdHandler::getMainSiteCode(), 'form')?>" class="header-btn-feedback">Линия доверия</a>
                         </div>
 				  <?} else {?>
