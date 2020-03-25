@@ -1,0 +1,4 @@
+AuthUserFile /var/www/bitrix/hydrology/informer/ctrl/.htpasswd
+AuthType basic
+AuthName "Private Zone"
+Require valid-user

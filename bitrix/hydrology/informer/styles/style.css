@@ -1,0 +1,237 @@
+html { height: 100%; width: 100%; }
+body { width: 100%; height: 100%; padding: 0; margin: 0; background: #fff; font: 85% Arial, sans-serif; color: #111; }
+
+body * { transition:all .3s ease 0s; }	
+
+span, div { box-sizing: border-box }	
+	
+a { color: #3284b6; outline: none }	
+a:hover { color: #db241c; }
+	
+img, form, p, ul, ol, li, table, tr, td, div { padding: 0; margin: 0; border: 0; }
+	
+p { padding-bottom: 1em; }
+	
+ul { padding: 0 0 1.5em 0; clear: left }	
+ul li { background: url(img/li.png) no-repeat 0 .7em; list-style: none; list-style-type: none; padding: 0 0 .5em 16px }
+ul ol li { list-style: auto; background: none }	
+
+ol { padding: 0 0 1.5em 20px; clear: left  }	
+ol li { padding: 0 0 .5em 0; }	
+ol li ul li { background: url(img/li.png) no-repeat 0 .7em; list-style: none; list-style-type: none; padding: 0 0 .5em 16px }
+
+ol ul, ul ul, ul ol, ol ol { padding: 1em 0 0 0; } 
+	
+table { font-size: 100%; }
+	
+h1 { font-size: 180%; font-weight: normal; margin: 0; padding: 0 0 .8em 0; color: #000; line-height: normal }	
+h2 { font-size: 160%; font-weight: normal; margin: 0; padding: 0 0 .6em 0; color: #000; line-height: normal }	
+h3 { font-size: 140%; font-weight: normal; margin: 0; padding: 0 0 1em 0; color: #000; line-height: normal }	
+h4 { font-size: 120%; font-weight: normal; margin: 0; padding: 0 0 1em 0; color: #000; line-height: normal }	
+h6 { font-size: 100%; font-weight: bold; margin: 0; padding: 0 0 .5em 0; color: #000; line-height: normal }
+	
+input, select, textarea { font-family: inherit; padding: 0 0 .1em 4px; font-size: 100%; outline: none; box-sizing: border-box; }
+
+button { -webkit-appearance: none;}
+	
+a img { border: none; }
+	
+.img-lft { float: left; margin: 0 20px 20px 0; }	
+.img-rgh { float: right; margin: 0 0 20px 20px; }
+	
+cite { font-style: italic; }
+	
+.table { border-collapse: collapse; margin: .5em 0 2em 0 }	
+.table th { color: #fff; padding: .5em 20px .6em 20px; text-align: left; background: #3286cb; font-size: 120%; font-weight: normal }	
+.table td { padding: .8em 20px; vertical-align: top; }	
+.table .odd td { background: #f4fafc }
+	
+blockquote { margin: 0 0 2em 0; background: #f4fafc; padding: 10px }
+	
+.clear { clear: both }	
+.shadow { box-shadow: 0 0 6px #3577db; transition: border linear 0.2s, box-shadow linear 0.2s; }
+
+input.infocus { color: #000 !important; font-style: normal !important }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+
+/*=========================*/
+.container { min-height: 100%; width: 980px; margin: 0 auto; }
+.head { padding: 14px 0 10px 0; border-bottom: 1px solid #ccc; margin-bottom: 35px }
+.head-title { font-size: 24px; margin-bottom: 15px }
+.head-date { font-size: 13px; }
+.head-date * { vertical-align: middle; }
+.head-date input { width: 110px; border: 1px solid #aaa; margin-left: 8px; padding: 2px 6px; background: #fff url(img/calendar.png) no-repeat 95% 50%;  }
+
+.info { font-family: Tahoma; font-size: 12px; padding: 0 19px 50px 19px }
+.info-title { font-size: 22px; font-family: Calibri; margin-bottom: 14px }
+.info p { padding: 0 0 .4em 0 }
+.info .legend { padding-bottom: 20px }
+
+.info span { display: inline-block; vertical-align: middle; width: 20px; height: 3px; margin: 0 10px 2px 0 }
+.l-red { background: #a62426; display: inline-block; vertical-align: middle; width: 14px; height: 8px; margin: 0 5px 2px 0}
+.l-green { background: #5a8e22; display: inline-block; vertical-align: middle; width: 14px; height: 8px; margin: 0 5px 2px 0 }
+.l-black { background: #111; display: inline-block; vertical-align: middle; width: 14px; height: 8px; margin: 0 5px 2px 0 }
+
+.informer { padding: 0 19px 0 19px; font-size: 0; }
+.data-block  { display: inline-block; vertical-align: top; position: relative; margin-bottom: 40px; }
+.data-block img { position: relative; z-index: 2 }
+
+.informer-block { position: absolute }
+.informer-comment { position: absolute; font-size: 10px; color: #999; top: 100%; left: 0; padding-top: 50px }
+.informer-comment b { color: #e31e24 }
+
+.current { position: absolute; color: #000; font-size: 13px; font-family: Arial; }
+.up { margin-left: -10px; padding-left: 10px; background: url('img/arrs.gif') 0 -20px no-repeat }
+.down { margin-left: -10px; padding-left: 10px; background: url('img/arrs.gif') 0 6px no-repeat  }
+
+.data { position: absolute; }
+.level { position: absolute; bottom: 0; left: 0; width: 100%; background: #0095c0; opacity: .6; }
+.fpu span, .npu span, .umo span { background: #fff; padding: 0 1px; }
+
+.fpu { position: absolute; bottom: 100%; right: -17px; font-size: 10px; color: #a52227; z-index: 2; width: 54px; }
+.fpu:after { content: ''; position: absolute; width: 100%; height: 2px; background: #a52227; bottom: 0; left: 0 }
+.npu { position: absolute; right: -17px; font-size: 10px; color: #598f20; z-index: 2; width: 54px; }
+.npu:after { content: ''; position: absolute; width: 100%; height: 2px; background: #598f20; bottom: 0; left: 0 }
+.npu span { position: relative; top: 1.3em }
+.npu .top { position: relative; top: 0em }
+.umo { position: absolute; right: -17px; font-size: 10px; color: #111; z-index: 2; width: 54px; }
+.umo span { position: relative; top: 1.2em }
+.umo:after { content: ''; position: absolute; width: 100%; height: 2px; background: #111; bottom: 0; left: 0 }
+
+.popup-trigger { position: absolute; height: 20px; width: 150px; z-index: 3; cursor: pointer }
+
+.zeya { height: 270px; width: 200px; top: 0; left: 0 }
+.zeya .data { height: 110px; bottom: 46px; width: 89px; left: 0; }
+.zeya .current { top: 68px; left: 53px }
+.zeya .popup-trigger { top: 68px; left: 50px }
+
+.bureya { height: 270px; width: 200px; top: 0; left: 0 }
+.bureya .data { height: 110px; bottom: 46px; width: 89px; left: 0; }
+.bureya .current { top: 68px; left: 53px }
+.bureya .popup-trigger { top: 68px; left: 50px }
+
+.kolyma { height: 209px; width: 73px; top: 0; left: 0 }
+.kolyma .data { height: 114px; width: 60px; bottom: 0; left: 0; }
+.kolyma .current { top: 52px; left: 23px }
+.kolyma .popup-trigger { top: 52px; left: 20px }
+
+.ust-sr { height: 243px; width: 116px; top: 0; left: 73px }
+.ust-sr .data { height: 100px; width: 116px; bottom: 0; left: 0; }
+.ust-sr .current { top: 92px; left: 80px }
+.ust-sr .popup-trigger { top: 92px; left: 80px; width: 210px }
+.ust-sr:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.uglich { height: 255px; width: 60px; top: 0; left: 29px }
+.uglich .data { height: 128px; width: 100%; bottom: 0; left: 0; }
+.uglich .current { top: 58px; left: 22px }
+.uglich .popup-trigger { top: 58px; left: 22px }
+.uglich:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 5px; left: 14px; }
+
+.rybinsk { height: 275px; width: 70px; top: 0; left: 89px }
+.rybinsk .data { height: 137px; width: 100%; bottom: 0; left: 0; }
+.rybinsk .current { top: 83px; left: 32px }
+.rybinsk .popup-trigger { top: 83px; left: 32px }
+.rybinsk:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 10px; left: 14px; }
+
+.nijegorod { height: 289px; width: 76px; top: 0; left: 173px }
+.nijegorod .data { height: 130px; width: 100%; bottom: 0; left: 0; }
+.nijegorod .current { top: 108px; left: 38px }
+.nijegorod .popup-trigger { top: 108px; left: 38px; width: 165px }
+.nijegorod:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 5px; left: 0; }
+
+.cheboksar  { height: 290px; width: 76px; top: 0; left: 263px }
+.cheboksar  .data { height: 123px; width: 100%; bottom: 0; left: 0; }
+.cheboksar  .current { top: 133px; left: 38px }
+.cheboksar .popup-trigger { top: 133px; left: 38px }
+.cheboksar:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.jigul  { height: 325px; width: 170px; top: 0; left: 339px }
+.jigul  .data { height: 120px; width: 100%; bottom: 0; left: 0; }
+.jigul  .current { top: 145px; left: 133px }
+.jigul .popup-trigger { top: 145px; left: 133px }
+.jigul:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 14px; }
+
+.saratov  { height: 325px; width: 146px; top: 0; left: 523px }
+.saratov  .data { height: 124px; width: 100%; bottom: 0; left: 0; }
+.saratov  .current { top: 154px; left: 110px }
+.saratov .popup-trigger { top: 154px; left: 110px }
+.saratov:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.voljsk  { height: 360px; width: 86px; top: 0; left: 683px }
+.voljsk  .data { height: 124px; width: 100%; bottom: 0; left: 0; }
+.voljsk  .current { top: 179px; left: 48px }
+.voljsk .popup-trigger { top: 179px; left: 48px }
+.voljsk:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.kama  { height: 210px; width: 59px; top: 0; left: 0 }
+.kama  .data { height: 122px; width: 100%; bottom: 0; left: 0; }
+.kama  .current { top: 52px; left: 20px }
+.kama .popup-trigger { top: 52px; left: 20px }
+
+.votinsk  { height: 240px; width: 106px; top: 0; left: 73px }
+.votinsk  .data { height: 123px; width: 100%; bottom: 0; left: 0; }
+.votinsk  .current { top: 77px; left: 70px }
+.votinsk .popup-trigger { top: 77px; left: 70px }
+.votinsk:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.sayano  { height: 210px; width: 59px; top: 0; left: 0 }
+.sayano  .data { height: 114px; width: 100%; bottom: 0; left: 0; }
+.sayano  .current { top: 52px; left: 22px }
+.sayano .popup-trigger { top: 52px; left: 22px; width: 200px }
+
+.irkutsk  { height: 244px; width: 59px; top: 0; left: 0 }
+.irkutsk  .data { height: 137px; width: 100%; bottom: 0; left: 0; }
+.irkutsk  .current { top: 58px; left: 22px }
+.irkutsk .popup-trigger { top: 58px; left: 22px; }
+
+.bratsk  { height: 269px; width: 116px; top: 0; left: 73px }
+.bratsk  .data { height: 130px; width: 100%; bottom: 0; left: 0; }
+.bratsk  .current { top: 83px; left: 80px }
+.bratsk .popup-trigger { top: 83px; left: 80px }
+.bratsk:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 10px; left: 0; }
+
+.ust-ilim  { height: 270px; width: 136px; top: 0; left: 203px }
+.ust-ilim .data { height: 110px; width: 100%; bottom: 0; left: 0; }
+.ust-ilim .current { top: 108px; left: 99px }
+.ust-ilim .popup-trigger { top: 108px; left: 99px; width: 165px }
+.ust-ilim:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.boguch  { height: 278px; width: 106px; top: 0; left: 353px }
+.boguch  .data { height: 110px; width: 100%; bottom: 0; left: 0; }
+.boguch .current { top: 133px; left: 69px }
+.boguch .popup-trigger { top: 133px; left: 69px }
+.boguch:before { content: ''; position: absolute; width: 28px; height: 109px; background: url(img/ramm.png) no-repeat 0 0; bottom: 0; left: 0; }
+
+.novosib  { height: 271px; width: 109px; top: 0; left: 0 }
+.novosib  .data { height: 138px; width: 100%; bottom: 0; left: 0; }
+.novosib  .current { top: 83px; left: 71px }
+.novosib .popup-trigger { top: 83px; left: 71px; width: 165px; }
+
+.irganai  { height: 249px; width: 149px; top: 0; left: 0 }
+.irganai  .data { height: 128px; width: 100%; bottom: 0; left: 0; }
+.irganai  .current { top: 73px; left: 112px }
+.irganai .popup-trigger { top: 73px; left: 112px }
+
+.chirkeysk  { height: 246px; width: 149px; top: 0; left: 0 }
+.chirkeysk  .data { height: 126px; width: 100%; bottom: 0; left: 0; }
+.chirkeysk  .current { top: 73px; left: 112px }
+.chirkeysk .popup-trigger { top: 73px; left: 112px }
+
+.vilyuj  { height: 246px; width: 149px; top: 0; left: 0 }
+.vilyuj  .data { height: 126px; width: 100%; bottom: 0; left: 0; }
+.vilyuj  .current { top: 73px; left: 112px }
+.vilyuj .popup-trigger { top: 73px; left: 112px }
+
+.footer-info { font-size: 10px; padding: 20px 20px 40px 20px;  }
+.footer-info p { padding-bottom: 4px; line-height: 1.2em }
+.footer-info_block { padding: 0 0 12px 20px; position: relative }
+.footer-info .cnt { position: absolute; color: red; top: 0; left: 0; font-size: 12px }
+
+.popup-info { position: absolute; width: 310px; border-radius: 10px; background: #ededed; font-size: 12px; z-index: 10; padding: 16px 17px 0 17px; visibility: hidden; opacity: 0; border: 1px solid #cdcdcd; box-shadow: 0 0 10px #ccc;  }
+.popup-info.active { visibility: visible; opacity: 1 }
+.popup-info .legend { padding: 5px 10px 10px 10px; min-height: 210px  }
+.popup-info .legend p { padding-bottom: 8px  }
+
+.popup-info .up { color: #8ab440; margin-left: 5px; padding-left: 11px; background: url('img/arrs.gif') 0 -20px no-repeat }
+.popup-info .down {	color: #0688e2; margin-left: 5px; padding-left: 11px;	background: url('img/arrs.gif') 0 6px no-repeat }
