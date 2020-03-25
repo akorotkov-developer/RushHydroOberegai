@@ -122,7 +122,6 @@ function printItem($id, $prevID = 0) {
 		$current = '<span class="current">н/д</span>';
 	}
 
-
 	// Координата текущего уровня
 	if(isset($data[$id]['last'])) {
 		$height = $data[$id]['last']['uvbPoint'];
@@ -133,9 +132,6 @@ function printItem($id, $prevID = 0) {
 		$height = $data[$id]['npuPoint'];
 	}
 
-    echo "<pre>";
-    var_dump($height);
-    echo "</pre>";
 	//Вычисляем разницу между текущей ГЭС и предыдущей
 	if ($prevID > 0) {
         $prevHeight = getHeightReservoir($prevID);
@@ -143,21 +139,9 @@ function printItem($id, $prevID = 0) {
         if ($difference < 10) {
             $height -= 10;
         }
-    }
-
-	if ($id == 44) {
-	    echo "<pre>";
-	    var_dump("testtest");
-	    echo "</pre>";
-	    echo "<pre>";
-	    var_dump($prevHeight);
-	    echo "</pre>";
-	    echo "<pre>";
-	    var_dump($height);
-	    echo "</pre>";
-	    echo "<pre>";
-	    var_dump($difference);
-	    echo "</pre>";
+        if ($id == 28) {
+            $height += 15;
+        }
     }
 
     foreach(array(
