@@ -1,0 +1,557 @@
+// Инициализация виджета
+var initImap1 = function(container, lang){
+	var Imap1 = new Class({
+
+		Implements: [Options],
+
+		options: {
+
+			/**
+			 * @var {String} Current language
+			 */
+			lang: 'ru',
+
+			/**
+			 * @var {Object} Points params (x, y, type)
+			 */
+			points: [
+			    {
+			        "coord": [241, 257],
+			        "name": "Башкирский филиал",
+			        "city": "г. Уфа",
+			        "sectors": "<ul><li>Производственный участок в г.Нефтекамск</li><li>Производственный участок в г.Октябрьский</li></ul>",
+			        "img": "/hvkk/13.jpg",
+			        "contacts": "<p>Республика Башкортостан г. Уфа, ул. Цюрупы, 74</p><p>Директор филиала  – Бикметов Эльвир Фанисович</p><p>Тел.:  +7 347 246 92 16</p><p>e-mail: Ufa@hvkk.rushydro.ru</p><p>Местонахождение филиала: 450077, Республика Башкортостан г. Уфа, ул. Цюрупы, 74</p><a href='http://www.hvkk.rushydro.ru/branches/bashkir/'>Подробнее о филиале</a>",
+			        "type": 1
+			    },
+			    {
+			        "coord": [145, 273],
+			        "name": "Волжский филиал",
+			        "city": "г. Волжский",
+			        "img": "/hvkk/2.jpg",
+			        "contacts": "<p>Российская Федерация, Волгоградская область, г. Волжский, пр-т Ленина, д. 1а</p><p>Директор филиала – Губанов Борис Леонидович</p><p>Тел.:  +7 8443 45 20 14; 45 20 15</p><a href='http://www.hvkk.rushydro.ru/branches/volzhskiy/'>Подробнее о филиале</a>",
+			        "type": 1
+			    },
+			    {
+			        "coord": [253, 243],
+			        "name": "Воткинский филиал",
+			        "city": "г. Чайковский",
+			        "sectors": "<ul><li>Производственный участок в г. Пермь</li></ul>",
+			        "img": "/hvkk/3.jpg",
+			        "contacts": "<p>Российская Федерация, Пермский край, г. Чайковский, Воткинская ГЭС</p><p>Директор филиала – Глазырин Николай Васильевич</p><p>Тел.:  +7 34241 4 63 41</p><a href='http://www.hvkk.rushydro.ru/branches/votkinskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [126, 337],
+			        "name": "Дагестанский филиал",
+			        "city": "г. Махачкала",
+			        "sectors": "<ul><li>Чирюртский производственный участок</li><li>Чиркейский производственный участок</li><li>Ирганайский производственный участок </li><li>Северо-Осетинский производственный участок</li></ul>",
+			        "img": "/hvkk/8.jpg",
+			        "contacts": "<p>Республика Дагестан, г. Махачкала,  ул. Даниялова,  д. 1 «в»</p><p>Директор филиала – Магомедов Магомедрасул Исмаилович</p><p>Тел.:  +7 872 251 85 13; 251 85 14</p><a href='http://www.hvkk.rushydro.ru/branches/dagestanskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [205, 255],
+			        "name": "Жигулевский филиал",
+			        "city": "г. Жигулевск",
+			        "img": "/hvkk/10.jpg",
+			        "contacts": "<p>Российская Федерация, Самарская область, г. Жигулевск, ул. Гидростроителей, д. 10</p><p>Директор филиала – Лебединский Андрей Николаевич</p><p>Тел.:  +7 84862 7 16 98 15</p><a href='http://www.hvkk.rushydro.ru/branches/zhigulevskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [161, 161],
+			        "name": "Загорский филиал",
+			        "city": "п. Богородское",
+			        "img": "/hvkk/11.jpg",
+			        "contacts": "<p>Российская Федерация, Московская область, Сергиево-Посадский район, пос. Богородское, д. 100</p><p>Директор филиала – Пушкаревский Игорь Васильевич</p><p>Тел.:  +7 495 545 32 01; 545 32 02</p><a href='http://www.hvkk.rushydro.ru/branches/zagorskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [703, 345],
+			        "name": "Зейский филиал",
+			        "city": "г. Зея",
+			        "img": "/hvkk/6.jpg",
+			        "contacts": "<p>Российская Федерация, Амурская область, г. Зея, Зейская ГЭС </p><p>Директор филиала – Зильберблюм Виталий Николаевич</p><p>Тел.:  +7 41658 31527</p><a href='http://www.hvkk.rushydro.ru/branches/zeyskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    /*{
+			        "coord": [205, 275],
+			        "name": "Инженерно-наладочный филиал",
+			        "city": "г. Самара",
+			        "img": "/hvkk/14.jpg",
+			        "contacts": "<p>Российская Федерация, Самарская область, г. Жигулевск, Московское шоссе, 2 (территория Жигулёвской ГЭС)</p><p>Директор филиала – Филипас Станислав Дмитриевич</p><p>Тел.:  +7 (84862) 7-16-76</p><a href='http://www.hvkk.rushydro.ru/branches/samarskii/'>Подробнее о филиале</a>",
+			        "type": 1
+			    },
+			    {
+			        "coord": [270, 236],
+			        "name": "Камский филиал",
+			        "city": "г. Пермь",
+			        "img": "/hvkk/9.jpg",
+			        "contacts": "<p>Российская Федерация, Пермский край, г. Пермь, Камская ГЭС </p><p>И.о. директора филиала - Мариев Дмитрий  Александрович</p><p>Тел.:  +7 342 270-98-71</p><a href='http://www.hvkk.rushydro.ru/branches/kama/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },*/
+			    {
+			        "coord": [113, 288],
+			        "name": "Кубанский филиал",
+			        "city": "г. Невинномысск",
+			        "sectors": "<ul><li>Производственный участок в г. Баксан</li><li>Зеленчукский производственный участок</li></ul>",
+			        "img": "/hvkk/4.jpg?2",
+			        "contacts": "<p>Фактический адрес: Российская Федерация, Ставропольский край, Кочубеевский р-н, с. Кочубеевское, 246 км Федеральной автодороги «Кавказ» </p><p>Директор филиала – Еланский Сергей Васильевич</p><p>Тел.:  +7 (86554) 5-61-33</p><a href='http://www.hvkk.rushydro.ru/branches/kubanskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [199, 210],
+			        "name": "Нижегородский филиал",
+			        "city": "г. Заволжье",
+			        "sectors": "<ul><li>Производственный участок в г. Рыбинск</li><li>Производственный участок в г. Углич</li></ul>",
+			        "img": "/hvkk/1.jpg",
+			        "contacts": "<p>Российская Федерация, Нижегородская область, Городецкий район, г. Заволжье, Нижегородская ГЭС</p><p>Директор филиала – Базин Сергей Павлович</p><p>Тел.:  +7 83161 7 96 96</p><a href='http://www.hvkk.rushydro.ru/branches/nizhegorodskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [173, 257],
+			        "name": "Саратовский филиал",
+			        "city": "г. Балаково",
+			        "img": "/hvkk/7.jpg",
+			        "contacts": "<p>Российская Федерация, Саратовская область, г. Балаково, Саратовская ГЭС</p><p>Директор филиала – Горин Николай Михайлович</p><p>Тел.:  +7 8453 46 25 16</p><a href='http://www.hvkk.rushydro.ru/branches/saratovskii/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [466, 376],
+			        "name": "Саяно-Шушенский филиал",
+			        "city": "п. Черемушки",
+			        "sectors": "<ul><li>Производственный участок в г. Новосибирск</li></ul>",
+			        "img": "/hvkk/12.jpg",
+			        "contacts": "<p>Российская Федерация, Республика Хакасия, Бейский район, пос. Черемушки, д. 103</p><p>Директор филиала – Чайников Александр Васильевич</p><p>Тел.:  +7 39042 7 17 02</p><a href='http://www.hvkk.rushydro.ru/branches/sayano-shushenskiy/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [214, 226],
+			        "name": "Чебоксарский филиал",
+			        "city": "г. Новочебоксарск",
+			        "img": "/hvkk/5.jpg",
+			        "contacts": "<p>Российская Федерация, Чувашская Республика, г. Новочебоксарск, ул. Набережная, д. 34, Чебоксарская ГЭС </p><p>Директор филиала – Журавлев Сергей Васильевич</p><p>Тел.:  +7 (8352) 30-17-80</p><a href='http://www.hvkk.rushydro.ru/branches/cheboksary/'>Подробнее о филиале</a>",
+			        "type": 1,
+			        "mixed": 1
+			    },
+			    {
+			        "coord": [505, 311],
+			        "name": "Богучанская ГЭС<br><em>(в состоянии достройки)</em>",
+			        "img": "/stations/27.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [746, 369],
+			        "name": "Бурейская ГЭС",
+			        "img": "/stations/1.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [189, 172],
+			        "name": "Каскад Верхневолжских ГЭС",
+			        "img": "/stations/2.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [598, 257],
+			        "name": "Каскад Вилюйских ГЭС",
+			        "img": "/stations/3.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [145, 273],
+			        "name": "Волжская ГЭС",
+			        "img": "/stations/4.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [253, 243],
+			        "name": "Воткинская ГЭС",
+			        "img": "/stations/5.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [126, 337],
+			        "name": "ГЭС Дагестанского филиала",
+			        "img": "/stations/6.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [205, 255],
+			        "name": "Жигулевская ГЭС",
+			        "img": "/stations/7.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [161, 161],
+			        "name": "Загорская ГАЭС",
+			        "img": "/stations/8.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [104, 328],
+			        "name": "Зарамагские ГЭС<br><em>(в состоянии достройки)</em>",
+			        "img": "/stations/9.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [703, 345],
+			        "name": "Зейская ГЭС",
+			        "img": "/stations/10.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [100, 316],
+			        "name": "ГЭС Кабардино-Балкарского филиала",
+			        "img": "/stations/11.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [270, 236],
+			        "name": "Камская ГЭС",
+			        "img": "/stations/12.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [110, 302],
+			        "name": "ГЭС Карачаево-Черкесского филиала",
+			        "img": "/stations/13.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [796, 204],
+			        "name": "Колымская ГЭС",
+			        "img": "/stations/14.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [113, 288],
+			        "name": "Каскад Кубанских ГЭС",
+			        "img": "/stations/15.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [199, 210],
+			        "name": "Нижегородская ГЭС",
+			        "img": "/stations/16.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [411, 338],
+			        "name": "Новосибирская ГЭС",
+			        "img": "/stations/17.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [173, 257],
+			        "name": "Саратовская ГЭС",
+			        "img": "/stations/18.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [466, 376],
+			        "name": "Саяно-Шушенский ГЭК",
+			        "img": "/stations/19.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [56, 349],
+			        "name": "Севан-Разданский каскад",
+			        "img": "/stations/20.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [113, 323],
+			        "name": "ГЭС Северо-Осетинского филиала",
+			        "img": "/stations/21.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [866, 237],
+			        "name": "Толмачевские ГЭС",
+			        "img": "/stations/22.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [803, 189],
+			        "name": "Усть-Среднеканская ГЭС<br><em>(в состоянии достройки)</em>",
+			        "img": "/stations/33.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [214, 226],
+			        "name": "Чебоксарская ГЭС",
+			        "img": "/stations/23.jpg",
+			        "type": 2
+			    },
+			    {
+			        "coord": [340, 456],
+			        "name": "Верхне-Нарынский каскад ГЭС",
+			        "img": "/stations/28.jpg",
+			        "type": 3
+			    },
+			    {
+			        "coord": [116, 344],
+			        "name": "Гоцатлинская ГЭС",
+			        "img": "/stations/29.jpg",
+			        "type": 3
+			    },
+			    {
+			        "coord": [148, 169],
+			        "name": "Загорская ГАЭС-2",
+			        "img": "/stations/30.jpg",
+			        "type": 3
+			    },
+			    {
+			        "coord": [97, 294],
+			        "name": "Зеленчукская ГЭС-ГАЭС",
+			        "img": "/stations/31.jpg",
+			        "type": 3
+			    },
+			    {
+			        "coord": [736, 379],
+			        "name": "Нижне-Бурейская ГЭС",
+			        "img": "/stations/32.jpg",
+			        "type": 3
+			    }
+			],
+
+			/**
+			 * @var {Object} Plant types definition
+			 */
+			types: {},
+			filter: [
+				{
+					"type": 1,
+			        "title": "Филиалы АО «Гидроремонт-ВКК»"
+				},
+				{
+					"type": 2,
+			        "title": "Действующие ГЭС"
+				},
+				{
+					"type": 3,
+			        "title": "Строящиеся ГЭС"
+				}
+			]
+		},
+
+		initialize: function(container, options)
+		{
+			this.setOptions(options);
+
+			this.container = $(container);
+			this.pointContainer = this.container.find('.w-imap-points');
+			savePointContainer = this.pointContainer;
+			this.points = [];
+
+			$('.w-imap-line-top').text('География присутствия компании');
+
+			var filterHtml = '',
+				counter = 0,
+				counterAdd = 0,
+				typePointForLegend = 1,
+				colTwo = true,
+				legendHTML = '';
+
+
+			filterHtml = '<div class="w-imap-filter-group-col">';
+
+			$.each(this.options.filter, function(index, val){
+				filterHtml += '<a href="javascript:void(0)" class="w-imap-filter-item index_'+val.type+' active" data-id="'+val.type+'"><i></i>'+val.title+'</a>';
+				counter++;
+			}.bind(this));
+			filterHtml += '</div>';
+
+			$('.w-imap-filter-group.for_type').html(filterHtml);
+
+			counter = 0;
+
+			var that = this;
+
+			this.typeFilter = this.container
+				.find('.w-imap-filter-group.for_type .w-imap-filter-item')
+				.on('click', function(){
+					$(this).toggleClass('active');
+					that._applyFilter();
+				});
+
+			this.options.types = {};
+			$.each(this.typeFilter, function(index, typeDom){
+				this.options.types[index+1] = {title: $(typeDom).html()};
+			}.bind(this));
+
+
+			$.each(this.options.points, function(index, point){
+				index = parseInt(index)+1;
+				classVal = '';
+				if (typeof point.mixed !== "undefined") {
+					classVal = ' w-imap-point-mixed';
+				}
+				this.points[index] = $('<a class="w-imap-point type_'+point.type+' index_'+index+classVal+'" data-id="'+index+'" href="javascript:void(0)"><i>'+index+'</i></a>')
+					.css({left: point.coord[0], top: point.coord[1]})
+					.data('index', index)
+					.appendTo(this.pointContainer)
+					.click(function() {
+						savePointContainer.find(".w-imap-point_act").removeClass("w-imap-point_act w-imap-point_click w-imap-point_select");
+						$(this).addClass("w-imap-point_act w-imap-point_click w-imap-point_select");
+						that._clickDot(savePointContainer, index);
+					})
+					.hover(
+						function() {
+							if (!$(this).hasClass("w-imap-point_click")) {
+								savePointContainer.find(".w-imap-point_click").removeClass("w-imap-point_click");
+								$(this).addClass("w-imap-point_act");
+								$(".w-imap-legend-item[data-id="+index+"]").addClass("w-imap-legend-item_hover");
+							}
+						},
+						function() {
+							if (!$(this).hasClass("w-imap-point_select")) {
+								$(this).removeClass("w-imap-point_act");
+								$(".w-imap-legend-item[data-id="+index+"]").removeClass("w-imap-legend-item_hover");
+							}
+						}
+					);
+				var popupPlace = (point.coord[0] > 470) ? 'left' : 'right';
+				var popupHtml = '<span class="w-imap-point-popup at_'+popupPlace+'">' +
+					'<span class="w-imap-point-popup-tick"></span>' +
+					'<span class="w-imap-point-popup-filter">'+this.options.types[point.type].title+'</span>' +
+					'<span class="w-imap-point-popup-name">'+point.name+'</span>';
+
+				if (typeof point.city !== "undefined") {
+					popupHtml += '<span class="w-imap-point-popup-title">'+point.city+'</span>';
+				}
+				if (typeof point.contacts !== "undefined") {
+					popupHtml += '<span class="w-imap-point-popup_contacts">'+point.contacts+'</span>';
+				}
+				
+				popupHtml += '<img src="/geography/i'+point.img+'" /></span>';
+
+				$(popupHtml).appendTo(this.points[index]);
+
+
+				// legend build
+				counter++;
+
+				if (counter == 1) {
+					legendHTML += '<div class="w-imap-legend-col w-imap-legend-col_hvkk"><div class="w-imap-legend_group"><div class="w-imap-legend_group__ttl type_'+point.type+'">'+this.options.types[point.type].title+'</div>';
+				}
+
+				if (parseInt(point.type) == 2 && colTwo) {
+					colTwo = false;
+					legendHTML += '</div></div><div class="w-imap-legend-col">';
+				}
+
+				if (typePointForLegend != parseInt(point.type)) {
+					if (parseInt(point.type) != 2) {
+						legendHTML += '</div>';
+					}
+					legendHTML += '<div class="w-imap-legend_group"><div class="w-imap-legend_group__ttl type_'+point.type+'">'+this.options.types[point.type].title+'</div>';
+				}
+
+				legendHTML += '<div class="w-imap-legend-item" data-id="'+index+'"><span class="w-imap-legend_idx">'+index+'.</span><div class="w-imap-legend_name"><strong>' +point.name+'</strong>';
+
+				if (parseInt(point.type) == 1) {
+					legendHTML += ' АО «Гидроремонт-ВКК» в ' + point.city;
+				}
+
+				legendHTML += '</div>';
+
+				if (typeof point.sectors !== "undefined") {
+					legendHTML += point.sectors;
+				}
+				legendHTML += '</div>';
+
+				typePointForLegend = parseInt(point.type);
+
+			}.bind(this));
+			
+			$('.w-imap-legend_cont').html(legendHTML+'</div>');
+			$('.w-imap-legend_cont .w-imap-legend-item')
+				.hover(
+					function() {
+						$(".w-imap-point[data-id="+$(this).data("id")+"]").addClass("w-imap-point_act");
+					},
+					function() {
+						if (!$(this).hasClass("w-imap-legend-item_act")) {
+							$(".w-imap-point[data-id="+$(this).data("id")+"]").removeClass("w-imap-point_act");
+						}
+					}
+				)
+				.click(function() {
+					that._clickDot(savePointContainer, $(this).data("id"));
+				});
+
+			$('.w-imap-filial_contacts').on('click', 'a', function() {
+				window.parent.location.href = $(this).attr('href');
+				return false;
+			});
+		},
+
+		_clickDot: function (container, idx) {
+			$('.w-imap-legend_cont .w-imap-legend-item_hover').removeClass("w-imap-legend-item_hover");
+			$('.w-imap-legend_cont .w-imap-legend-item_act').removeClass("w-imap-legend-item_act");
+			$(".w-imap-legend-item[data-id="+idx+"]").addClass("w-imap-legend-item_act");
+			container.find(".w-imap-point_act").removeClass("w-imap-point_act w-imap-point_click w-imap-point_select");
+			$(".w-imap-point[data-id="+idx+"]").addClass("w-imap-point_act w-imap-point_click w-imap-point_select");
+			var htmlVal = "<p><strong>"+$(".w-imap-legend-item[data-id="+idx+"] .w-imap-legend_name").text()+"</strong></p>";
+			if ($(".w-imap-point[data-id="+idx+"] .w-imap-point-popup_contacts").length > 0) {
+				htmlVal += $(".w-imap-point[data-id="+idx+"] .w-imap-point-popup_contacts").html();
+			}
+			$(".w-imap-filial_contacts").html(htmlVal);
+		},
+
+		_applyFilter: function()
+		{
+			var powers = [], // Active power indexes
+				types = [], // Active type indexes
+				points = []; // Remaining points ids
+			$.each(this.typeFilter, function(index, item){
+				if ($(item).hasClass('active')) types.push(parseInt($(item).data("id")));
+			}.bind(this));
+			$.each(this.options.points, function(index, point){
+				// Filter by the type
+				if ($.inArray(point.type, types) == -1) return;
+				points.push(parseInt(index));
+			}.bind(this));
+			$.each(this.options.points, function(index, point){
+				this.points[index+1][($.inArray(parseInt(index), points) == -1)?'hide':'show']();
+			}.bind(this));
+		},
+
+		/**
+		 * Format periods on lang preferences
+		 * @private
+		 */
+		_periodsFormat: function (x) {
+			if (x == undefined) return x;
+			var delimiter = '',
+				decimals = '.',
+				parts = x.toString().split(".");
+
+			if (this.options.lang == 'en'){
+				delimiter = ',';
+				decimals = '.';
+			}
+			if (this.options.lang == 'ru'){
+				delimiter = ' ';
+				decimals = ',';
+			}
+
+			return parts[0].replace(/\B(?=(\d{3})+(?=$))/g, delimiter) + (parts[1] ? decimals + parts[1] : "");
+		}
+	});
+	new Imap1(container, {lang: lang});
+};
+// Перед уничтожением виджета
+var deinitImap1 = function(container, lang){};

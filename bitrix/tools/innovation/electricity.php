@@ -240,7 +240,8 @@ $formDone = false;
 $fieldValues = array();
 $error = array();
 ?>
-<? if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+<? if (false) {
+    //if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if (isset($_FILES)) {
         $fileDir = dirname(__FILE__).'/file/';

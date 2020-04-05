@@ -1,0 +1,9 @@
+<?
+$PERM["handlers"]["*"]="R";
+$PERM["m"]["10"]="W";
+$PERM["upload"]["10"]="R";
+$PERM["forum"]["6"]="W";
+$PERM["blogs"]["6"]="W";
+$PERM["index.php"]["6"]="W";
+$PERM["/"]["*"]="R";
+?>

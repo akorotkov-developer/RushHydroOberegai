@@ -1,0 +1,4 @@
+AuthUserFile /var/www/bitrix/tracing/.htpasswd
+AuthType basic
+AuthName "Private Zone"
+Require valid-user

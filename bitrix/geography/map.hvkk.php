@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 ie-6 ie" xmlns:og="http://ogp.me/ns#" id="nojs"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8 ie-7 ie" xmlns:og="http://ogp.me/ns#" id="nojs"> <![endif]-->
+<!--[if IE 8]><html class="lt-ie9 ie-8 ie" xmlns:og="http://ogp.me/ns#" id="nojs"><![endif]-->
+<!--[if IE 9]><html class="ie-9 ie" xmlns:og="http://ogp.me/ns#" id="nojs"><![endif]-->
+<!--[if gt IE 9]><!--><html xmlns:og="http://ogp.me/ns#" id="nojs"><!--<![endif]-->
+<head>
+	<title>География РусГидро</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="/geography/map_hvkk.css?1">
+</head>
+
+<body>
+	<div class="w-imap-wrap w-imap-wrap__hvkk">
+		<div class="w-imap-line-top"></div>
+		<div class="w-imap">
+			<div class="w-imap-points">
+			</div>	
+
+			<div class="w-imap-tooltip"></div>	
+		</div>
+		<div class="w-imap-line-bottom">
+			<div class="w-imap-filter">
+				<p class="w-imap-filter-title">Фильтрация объектов на карте:</p>
+				<div class="w-imap-filter-group for_type">
+				</div>
+				
+				<div class="w-imap-filial_contacts"><div style="font-size:14px; font-style:italic; padding-top:10px;">Выберите филиал</div></div>
+			</div>
+		</div>
+		<div class="w-imap-legend w-imap-legend__hvkk">
+			<div class="w-imap-legend_cont"></div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="/geography/mootools-lightcore-1.4.5.js"></script>
+	<script src="/geography/imap.hvkk.js?23"></script>
+	<script>initImap1(".w-imap-wrap");</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+Options +Indexes 
+#ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+  php_flag allow_call_time_pass_reference 1
+  php_flag session.use_trans_sid off
+
+  php_value display_errors 1
+
+  #php_value mbstring.func_overload 2
+  #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+
+#Redirect http://www.kbf.rushydro.ru/press/news/101822.html http://www.mges-kbr.rushydro.ru/press/news/101823.html
+Redirect 301 /press/news/103208.html http://www.zagaes.rushydro.ru/press/news/103209.html
+Redirect /www/ http://www.rushydro.ru:8080/
+Redirect /mc/ http://www.mc.rushydro.ru:8080/
+Redirect /volges/ http://www.volges.rushydro.ru:8080/
+Redirect /votges/ http://www.votges.rushydro.ru:8080/
+Redirect /zhiges/ http://www.zhiges.rushydro.ru:8080/
+Redirect /kamges/ http://www.kamges.rushydro.ru:8080/
+Redirect /kvvges/ http://www.kvvges.rushydro.ru:8080/
+Redirect /nizhges/ http://www.nizhges.rushydro.ru:8080/
+Redirect /sarges/ http://www.sarges.rushydro.ru:8080/
+Redirect /cheges/ http://www.cheges.rushydro.ru:8080/
+Redirect /nges/ http://www.nges.rushydro.ru:8080/
+Redirect /kkges/ http://www.kkges.rushydro.ru:8080/
+Redirect /osetia/ http://www.osetia.rushydro.ru:8080/
+Redirect /dagestan/ http://www.dagestan.rushydro.ru:8080/
+Redirect /sulak/ http://www.sulak.rushydro.ru:8080/
+Redirect /irgges/ http://www.irgges.rushydro.ru:8080/
+Redirect /kbf/ http://www.kbf.rushydro.ru:8080/
+Redirect /kchf/ http://www.kchf.rushydro.ru:8080/
+Redirect /zges/ http://www.zges.rushydro.ru:8080/
+Redirect /nzges/ http://www.nzges.rushydro.ru:8080/
+Redirect /burges/ http://www.burges.rushydro.ru:8080/
+Redirect /sshges/ http://www.sshges.rushydro.ru:8080/
+Redirect /social-sayany/ http://www.social-sayany.rushydro.ru:8080/
+#Redirect /yakutia/ http://www.yakutia.rushydro.ru:8080/
+Redirect /yakutia/ http://www.cok.rushydro.ru:8080/
+
+Redirect /zagaes/ http://www.zagaes.rushydro.ru:8080/
+Redirect /zagaes2/ http://www.zagaes2.rushydro.ru:8080/
+Redirect /vmgeopp/ http://www.vmgeopp.rushydro.ru:8080/
+Redirect /lengaes/ http://www.lengaes.rushydro.ru:8080/
+Redirect /zaramag/ http://www.zaramag.rushydro.ru:8080/
+Redirect /prometey/ http://www.prometey.rushydro.ru:8080/
+Redirect /usges/ http://www.usges.rushydro.ru:8080/
+Redirect /usgesstroy/ http://www.usgesstroy.rushydro.ru:8080/
+Redirect /ervkk/ http://www.ervkk.rushydro.ru:8080/
+Redirect /hvkk/ http://www.hvkk.rushydro.ru:8080/
+Redirect /turboremont/ http://www.turboremont.rushydro.ru:8080/
+Redirect /niies/ http://www.niies.rushydro.ru:8080/
+Redirect /remik/ http://www.remik.rushydro.ru:8080/
+Redirect /vniig/ http://www.vniig.rushydro.ru:8080/
+Redirect /geotherm/ http://www.geotherm.rushydro.ru:8080/
+Redirect /pauzhet/ http://www.pauzhet.rushydro.ru:8080/
+Redirect /esko-ees/ http://www.esko-ees.rushydro.ru:8080/
+Redirect /lhp/ http://www.lhp.rushydro.ru:8080/
+Redirect /kolymaenergo/ http://www.kolymaenergo.rushydro.ru:8080/
+Redirect /hydroproject/ http://www.hydroproject.rushydro.ru:8080/
+Redirect /reec/ http://www.reec.rushydro.ru:8080/
+Redirect /kchggk/ http://www.kchggk.rushydro.ru:8080/
+Redirect /hydroinvest/ http://www.hydroinvest.rushydro.ru:8080/
+Redirect /nbges/ http://www.nbges.rushydro.ru:8080/
+#Redirect /nkges/ http://www.nkges.rushydro.ru:8080/
+Redirect /ssatc/ http://www.ssatc.rushydro.ru:8080/
+Redirect /sshger/ http://www.sshger.rushydro.ru:8080/
+Redirect /cso-sges/ http://www.cso-sges.rushydro.ru:8080/
+Redirect /esc/ http://www.esc.rushydro.ru:8080/
+Redirect /fewind/ http://www.fewind.rushydro.ru:8080/
+Redirect /korung/ http://www.korung.rushydro.ru:8080/
+Redirect /gis/ http://www.gis.rushydro.ru:8080/
+Redirect /mges-altai/ http://www.mges-altai.rushydro.ru:8080/
+Redirect /eng/ http://www.eng.rushydro.ru:8080/
+Redirect /global/ http://www.rushydro.ru:8080/
+
+Redirect /images/thumbnails/ http://www.rushydro.ru/images/thumbnails/
+Redirect /images/antispm/ http://www.rushydro.ru/images/antispm/
+
+Redirect /photocontest_unitingenergy/ http://www.photocontest.rushydro.ru/
+
+#Redirect http://www.eng.rushydro.ru:8080/investors/disclosure/issuing/ http://www.eng.rushydro.ru:8080/investors/disclosure/securities_issue/shares/
+
+#RedirectMatch /subscribe/$ http://www.rushydro.ru:8080/subscribe/subscr_edit.php
+
+# ??? probably error in RhdPath::build
+#Redirect /minutes/ http://www.rushydro.ru:8080/
+
+Redirect /press/gidrologicheskie-rezhimy/87603.html http://www.zges.rushydro.ru/press/gidrologicheskie-rezhimy/87924.html
+RewriteRule ^press/school/(.*)$ /press/material/spravochnye-materialy/school/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteBase /
+  #RewriteRule ^(res)/(.*)$ redirector.php?path=/$1/$2 [L]
+  #RewriteRule ^images/(content|video)/(.*)$ redirector.php?path=/images/$1/$2 [L]
+
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteCond %{REQUEST_FILENAME} !-l
+  #RewriteCond %{REQUEST_FILENAME} !-d
+  #RewriteCond %{REQUEST_URI} !.(php|html)$
+  #RewriteCond %{REQUEST_URI} !^/$
+  #RewriteCond %{REQUEST_URI} !.+/$
+  #RewriteRule ^.*[^/]$ $0/ [L,R=301]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+</IfModule>
+
+SetEnvIfNoCase User-Agent "ahrefs.com" bad_user
+SetEnvIfNoCase User-Agent "SemrushBot" bad_user
+<Limit GET POST HEAD>
+ Order Allow,Deny
+ Allow from all
+ Deny from env=bad_user 195.22.127.115,78.171.114.219,105.106.157.245,104.225.9.70,108.31.200.26,87.252.225.205
+</Limit>
+
+RewriteCond %{QUERY_STRING} wp-config [NC]
+RewriteRule ^.*$  - [F]
+ErrorDocument 403 /403.html
+
+RewriteCond %{REMOTE_ADDR} search.msn.com [NC]
+RewriteRule .* - [F]
+
+#Redirects for old pages 10 NTK
+
+Redirect 301 /konferentsiya-gidroenergetika/devyataya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2015-g/ http://www.vniig.rushydro.ru/ntk/514/523/
+Redirect 301 /konferentsiya-gidroenergetika/devyataya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2015-g http://www.vniig.rushydro.ru/ntk/514/523/
+Redirect 301 /konferentsiya-gidroenergetika/vosmaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2014-g-/ http://www.vniig.rushydro.ru/ntk/514/522/
+Redirect 301 /konferentsiya-gidroenergetika/vosmaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2014-g- http://www.vniig.rushydro.ru/ntk/514/522/
+Redirect 301 /konferentsiya-gidroenergetika/sedmaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2012-g/ http://www.vniig.rushydro.ru/ntk/514/521/
+Redirect 301 /konferentsiya-gidroenergetika/sedmaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2012-g http://www.vniig.rushydro.ru/ntk/514/521/
+Redirect 301 /konferentsiya-gidroenergetika/shestaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2011-g/ http://www.vniig.rushydro.ru/ntk/514/520/
+Redirect 301 /konferentsiya-gidroenergetika/shestaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2011-g http://www.vniig.rushydro.ru/ntk/514/520/
+Redirect 301 /konferentsiya-gidroenergetika/pyataya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2010-g/ http://www.vniig.rushydro.ru/ntk/514/519/
+Redirect 301 /konferentsiya-gidroenergetika/pyataya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2010-g http://www.vniig.rushydro.ru/ntk/514/519/
+Redirect 301 /konferentsiya-gidroenergetika/chetvertaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2008-g-/ http://www.vniig.rushydro.ru/ntk/514/518/
+Redirect 301 /konferentsiya-gidroenergetika/chetvertaya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2008-g- http://www.vniig.rushydro.ru/ntk/514/518/
+Redirect 301 /konferentsiya-gidroenergetika/tretya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2007-g/ http://www.vniig.rushydro.ru/ntk/514/517/
+Redirect 301 /konferentsiya-gidroenergetika/tretya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii-2007-g http://www.vniig.rushydro.ru/ntk/514/517/
+Redirect 301 /konferentsiya-gidroenergetika/vtoraya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii/ http://www.vniig.rushydro.ru/ntk/514/516/
+Redirect 301 /konferentsiya-gidroenergetika/vtoraya-ntk-gidroenergetika-novye-razrabotki-i-tekhnologii http://www.vniig.rushydro.ru/ntk/514/516/
+Redirect 301 /konferentsiya-gidroenergetika/pervaya-nauchno-tekhnicheskaya-konferentsiya-gidroenergetika-novye-razrabotki-i-tekhnologii-/ http://www.vniig.rushydro.ru/ntk/514/515/
+Redirect 301 /konferentsiya-gidroenergetika/pervaya-nauchno-tekhnicheskaya-konferentsiya-gidroenergetika-novye-razrabotki-i-tekhnologii- http://www.vniig.rushydro.ru/ntk/514/515/
+Redirect 301 /konferentsiya-gidroenergetika/ http://www.vniig.rushydro.ru/ntk/514/524/
+
+Redirect 301 /press/holding-news/103208.html http://www.rushydro.ru/press/holding-news/103209.html
+Redirect 301 /press/news/104856.html http://www.rushydro.ru/press/news/104859.html
+
+Redirect 301 /press/news/103484.html http://www.kamges.rushydro.ru/press/news/103487.html
+#RewriteRule /activity/razvitie_energetiki_dalnego_vostoka/(.*)$ /activity/energetika-dalnego-vostoka/$1 [L,R=301]
+Redirect 301 /activity/razvitie_energetiki_dalnego_vostoka http://www.rushydro.ru/activity/energetika-dalnego-vostoka
+
+Redirect 301 /press/events/104942.html http://www.cheges.rushydro.ru/press/events/nedelya-energetiki-2017/
+
+Redirect 301 /press/holding-news/105449.html http://www.rushydro.ru/press/holding-news/105450.html
+Redirect 301 /press/news/105449.html http://www.rushydro.ru/press/holding-news/105450.html
+
+#Redirect 301 /activity/razvitie_energetiki_dalnego_vostoka/news http://www.rushydro.ru/activity/energetika-dalnego-vostoka/news/
+
+Redirect 301 /activity/emerging_technologies/ http://www.rushydro.ru/activity/vie/emerging_technologies/
+Redirect 301 /press/material/nds/ http://www.rushydro.ru/activity/antikorruptsionnaya-deyatelnost/metodicheskie-materialy/nds/
+Redirect 301 /press/material/80661.html http://www.rushydro.ru/activity/antikorruptsionnaya-deyatelnost/metodicheskie-materialy/80661.html
+Redirect 301 /press/material/26716.html http://www.rushydro.ru/activity/antikorruptsionnaya-deyatelnost/metodicheskie-materialy/26716.html
+
+Redirect 301 /press/holding-news/106903.html http://www.rushydro.ru/press/boges/news/106904.html
