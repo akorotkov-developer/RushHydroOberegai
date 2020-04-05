@@ -142,6 +142,7 @@
 			});	
 		})
 	</script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <?php
@@ -240,9 +241,8 @@ $formDone = false;
 $fieldValues = array();
 $error = array();
 ?>
-<? if (false) {
-    //if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
+<?if ($_SERVER['REQUEST_METHOD'] === 'POST' and $_REQUEST["recaptcha-field"] == "grecaptcha-true") {
+
     if (isset($_FILES)) {
         $fileDir = dirname(__FILE__).'/file/';
 
@@ -591,8 +591,20 @@ $error = array();
                         <input name="SUPPLY11" id="SUPPLY11" class="inp " value="<?=$_REQUEST["SUPPLY11"]?>" type="text">
 					</td>
                 </tr>
+                <tr>
+                    <td>
+                        <?if ($_REQUEST["recaptcha-field"] and $_REQUEST["recaptcha-field"] != "grecaptcha-true") {?>
+                            <p style="color: red">Капча не заполнена</p>
+                        <?}?>
+                        <p style="color: red; display: none" id="capcha_error">Капча не заполнена</p>
+                        <div>
+                            <div class="g-recaptcha" data-sitekey="6Lef8OYUAAAAAFImiS-j4CUecPzIafMezFHIixXa"></div>
+                        </div>
+                    </td>
+                </tr>
             </table>
 			<br/>
+            <input type="hidden" name="recaptcha-field" id="recaptcha-field"/>
             <input type="submit" value="Отправить заявку" id="form-submit" />
 			<div class="tbl-f-error">
                 <?foreach ($error as $key=>$val){
@@ -602,5 +614,17 @@ $error = array();
         </form>		
     </div>
 <? } ?>
+
+<script>
+    $( "#zform" ).submit(function( event ){
+        var response = grecaptcha.getResponse();
+
+        if(response.length > 0) {
+            $("#recaptcha-field").val("grecaptcha-true");
+        } else {
+            $("#capcha_error").show();
+        }
+    });
+</script>
 </body>
 </html>
