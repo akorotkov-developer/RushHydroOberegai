@@ -142,6 +142,14 @@ function printItem($id, $prevID = 0) {
         if ($id == 28) {
             $height += 15;
         }
+        //Воткинская
+        if ($id == 30) {
+            $height += 18;
+        }
+        //Жигулёвская
+        if ($id == 31) {
+            $npuPoint -= 14;
+        }
     }
 
     foreach(array(

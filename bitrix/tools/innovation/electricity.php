@@ -623,6 +623,7 @@ $error = array();
             $("#recaptcha-field").val("grecaptcha-true");
         } else {
             $("#capcha_error").show();
+            event.preventDefault();
         }
     });
 </script>
