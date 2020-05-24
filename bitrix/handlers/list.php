@@ -785,6 +785,32 @@ if (RhdHandler::getJustPath() != "sustainable_development/alms_charity/") {
         );
     }
 
+    if (
+        RhdHandler::getJustPath() === 'corporate/general-meeting/forthcoming/zadat-vopros-chlenam-pravleniya-zamestitelyam-generalnogo-direktora-glavnomu-bukhgalteru-kandidatam-/'
+    ) {
+        $APPLICATION->IncludeComponent("rushydro:form.result.new", "gosa_2019",
+            Array(
+                "SEF_MODE" => "N",
+                "WEB_FORM_ID" => 10,
+                "LIST_URL" => '/' . RhdHandler::getJustPath(),
+                "EDIT_URL" => '/' . RhdHandler::getJustPath(),
+                "SUCCESS_URL" => '/' . RhdHandler::getJustPath(),
+                "CHAIN_ITEM_TEXT" => "",
+                "CHAIN_ITEM_LINK" => "",
+                "IGNORE_CUSTOM_TEMPLATE" => "N",
+                "USE_EXTENDED_ERRORS" => "Y",
+                "CACHE_TYPE" => "A",
+                "CACHE_TIME" => "3600",
+                "CACHE_NOTES" => "",
+                "VARIABLE_ALIASES" => Array(
+                    "WEB_FORM_ID" => "WEB_FORM_ID",
+                    "RESULT_ID" => "RESULT_ID"
+                )
+            ),
+            false
+        );
+    }
+
     if (RhdHandler::isFotoBank()) {
         if ($lastSection['UF_PHOTOBANK']) {
             $gallery = array();
