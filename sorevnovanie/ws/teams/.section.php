@@ -1,0 +1,4 @@
+<?
+$sSectionName = "Участники";
+$arDirProperties = Array();
+?>
