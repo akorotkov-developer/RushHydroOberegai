@@ -25,11 +25,11 @@
                             <table cellspacing="0" cellpadding="0">
                                 <tr>
                                     <?php if ($isExtended && RhdHandler::isMainSite() && !RhdHandler::isEnglish()) { ?>
-                                        <td style="border-right:1px solid #d7d7d7;">
+										<td style="border-right:1px solid #d7d7d7;">
                                             <?$APPLICATION->IncludeComponent("bitrix:news.list", "link_press", array(
                                                 "IBLOCK_TYPE" => "content",
                                                 "IBLOCK_ID" => 118,
-                                                "NEWS_COUNT" => 4,
+                                                "NEWS_COUNT" => 5,
                                                 "SORT_BY1" => "SORT",
                                                 "SORT_ORDER1" => "DESC",
                                                 "SORT_BY2" => "ACTIVE_FROM",
@@ -150,7 +150,7 @@
                                     <div class="filial-menu-list_col">
                                         <div class="filial-menu-list_item"><a href="http://www.vb-mges.rushydro.ru/">ООО «Верхнебалкарская МГЭС»</a></div>
                                         <div class="filial-menu-list_item"><a href="http://www.vniig.rushydro.ru/">АО «ВНИИГ им. Б.Е.Веденеева»</a> </div>
-                                        <div class="filial-menu-list_item"><a href="http://www.geotherm.rushydro.ru/">АО «Геотерм»</a> </div>
+                                        <!--<div class="filial-menu-list_item"><a href="http://www.geotherm.rushydro.ru/">АО «Геотерм»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.hydroinvest.rushydro.ru/">АО «Гидроинвест»</a> </div>
                                         <!--<div class="filial-menu-list_item"><a href="http://www.gis.rushydro.ru/" >АО «ГидроИнжиниринг Сибирь»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.hvkk.rushydro.ru/">АО «Гидроремонт-ВКК»</a> </div>
@@ -163,7 +163,7 @@
                                         <!--<div class="filial-menu-list_item"><a href="http://www.reec.rushydro.ru/" >АО «Инженерный центр возобновляемой энергетики»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.mhp.rushydro.ru/">АО «Институт Гидропроект»</a> </div>
                                         <!--<div class="filial-menu-list_item"><a href="http://www.international.rushydro.ru/rus/" >РусГидро Интернэшнл</a> </div>-->
-                                        <div class="filial-menu-list_item"><a href="http://www.kamgek.ru/index.php?cominfo" target="_blank">ПАО «Камчатский газоэнергетический комплекс»</a> </div>
+                                        <!--<div class="filial-menu-list_item"><a href="http://www.kamgek.ru/index.php?cominfo" target="_blank">ПАО «Камчатский газоэнергетический комплекс»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.kamenergo.ru" target="_blank">ПАО «Камчатскэнерго»</a> </div>
                                         <!--<div class="filial-menu-list_item"><a href="http://www.kchggk.rushydro.ru/" >АО «Карачаево-Черкесская ГГК»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.krsk-sbit.ru/" target="_blank">ПАО «Красноярскэнергосбыт»</a> </div><div class="filial-menu-list_item"><a href="http://www.kolymaenergo.rushydro.ru/">ПАО «Колымаэнерго»</a> </div>
@@ -199,14 +199,14 @@
                                         <div class="filial-menu-list_item"><a href="http://www.mc.rushydro.ru/">АО «УК ГидроОГК»</a> </div>
                                         <div class="filial-menu-list_item"><a href="http://www.usgesstroy.rushydro.ru/">АО «Усть-СреднеканГЭСстрой»</a> </div>
                                         <div class="filial-menu-list_item"><a href="http://www.usges.rushydro.ru/">АО «Усть-Среднеканская ГЭС им. А.Ф. Дьякова»</a> </div>
-                                        <div class="filial-menu-list_item"><a href="http://www.cso-sges.rushydro.ru/">АО «ЦСО СШГЭС»</a> </div>
-                                        <div class="filial-menu-list_item"><a href="http://www.chges.ru/" target="_blank">АО «ЧиркейГЭСстрой»</a> </div>
-                                        <div class="filial-menu-list_item"><a href="http://www.ch-sk.ru/" target="_blank">АО «Чувашская энергосбытовая компания»</a> </div>
-                                        <div class="filial-menu-list_item"><a href="http://www.chukotenergo.ru/" target="_blank">АО «Чукотэнерго»</a> </div>
-                                         <!--<div class="filial-menu-list_item"><a href="http://www.enecs.rushydro.ru/">ООО «ЭнергоКонсалтингСервис»</a> </div>-->
-                                        <div class="filial-menu-list_item"><a href="https://esc-rushydro.ru/consumer/">АО «ЭСК РусГидро»</a> </div>
-                                        <!--<div class="filial-menu-list_item"><a href="http://www.esko-ees.rushydro.ru/" >АО «ЭСКО ЕЭС»</a> </div>-->
-                                        <!--<div class="filial-menu-list_item"><a href="http://www.yakutia.rushydro.ru/">АО «Южно-Якутский ГЭК»</a> </div>-->
+										<div class="filial-menu-list_item"><a href="http://www.cok.rushydro.ru/">АО «Центр оценки квалификаций РУСГИДРО»</a> </div>
+										<div class="filial-menu-list_item"><a href="http://www.cso-sges.rushydro.ru/">АО «ЦСО СШГЭС»</a> </div>
+										<div class="filial-menu-list_item"><a href="http://www.chges.ru/" target="_blank">АО «ЧиркейГЭСстрой»</a> </div>
+										<div class="filial-menu-list_item"><a href="http://www.ch-sk.ru/" target="_blank">АО «Чувашская энергосбытовая компания»</a> </div>
+										<div class="filial-menu-list_item"><a href="http://www.chukotenergo.ru/" target="_blank">АО «Чукотэнерго»</a> </div>
+										<!--<div class="filial-menu-list_item"><a href="http://www.enecs.rushydro.ru/">ООО «ЭнергоКонсалтингСервис»</a> </div>-->
+										<div class="filial-menu-list_item"><a href="https://esc-rushydro.ru/consumer/">АО «ЭСК РусГидро»</a> </div>
+										<!--<div class="filial-menu-list_item"><a href="http://www.esko-ees.rushydro.ru/" >АО «ЭСКО ЕЭС»</a> </div>-->
                                         <div class="filial-menu-list_item"><a href="http://www.yakutskenergo.ru" target="_blank">ПАО «Якутскэнерго»</a> </div>
                                     </div>
                                 </div>
