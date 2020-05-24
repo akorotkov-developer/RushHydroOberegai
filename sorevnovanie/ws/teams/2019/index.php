@@ -1,6 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Участники Корпоративного чемпионата Группы РусГидро по стандартам WorldSkills 2019 года");
+global $arFilterTeams;
+$arFilterTeams = array('PROPERTY_YEAR_2019'=>"Y");
+
 ?> <?$APPLICATION->IncludeComponent(
 	"bitrix:news",
 	"teams",
