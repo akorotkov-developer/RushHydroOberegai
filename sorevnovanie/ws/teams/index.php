@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Участники");
 global $arFilterTeams;
-$arFilterTeams = array('!PROPERTY_ARCHIVE'=>"Y");
+$arFilterTeams = array('!PROPERTY_ARCHIVE'=>"Y", '!PROPERTY_YEAR_2019'=>"Y");
 ?> 	<?$APPLICATION->IncludeComponent(
 	"bitrix:news",
 	"teams",
