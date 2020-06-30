@@ -1,7 +1,7 @@
 <?$APPLICATION->IncludeComponent("bitrix:news.list", "main_banners", array(
 	"IBLOCK_TYPE" => "content",
 	"IBLOCK_ID" => RhdHandler::isEnglish() ? "119" : "114",
-	"NEWS_COUNT" => "",
+	"NEWS_COUNT" => 5,
 	"SORT_BY1" => "SORT",
 	"SORT_ORDER1" => "DESC",
 	"SORT_BY2" => "ACTIVE_FROM",

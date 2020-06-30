@@ -134,6 +134,11 @@ function printItem($id, $prevID = 0) {
 
 	//Вычисляем разницу между текущей ГЭС и предыдущей
 	if ($prevID > 0) {
+        if ($_GET["tst"] == "tst") {
+            echo "<pre>";
+            var_dump($id);
+            echo "</pre>";
+	    }
         $prevHeight = getHeightReservoir($prevID);
             $difference = $prevHeight - $height;
         if ($difference < 10) {
@@ -149,6 +154,19 @@ function printItem($id, $prevID = 0) {
         //Жигулёвская
         if ($id == 31) {
             $npuPoint -= 14;
+        }
+        //Волжская ГЭС
+        if ($id == 29) {
+            $height += 9;
+            $npuPoint -= 2;
+        }
+        //Нижегородская ГЭС
+        if ($id == 33) {
+            $height += 11;
+        }
+        //Рыбинская ГЭС
+        if ($id == 34) {
+            $height += 12;
         }
     }
 
