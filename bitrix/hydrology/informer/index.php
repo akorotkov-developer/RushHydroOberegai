@@ -149,7 +149,7 @@ function printItem($id, $prevID = 0) {
         }
         //Воткинская
         if ($id == 30) {
-            $height += 18;
+            $height += 10;
         }
         //Жигулёвская
         if ($id == 31) {
@@ -166,7 +166,7 @@ function printItem($id, $prevID = 0) {
         }
         //Рыбинская ГЭС
         if ($id == 34) {
-            $height += 12;
+
         }
     }
 
